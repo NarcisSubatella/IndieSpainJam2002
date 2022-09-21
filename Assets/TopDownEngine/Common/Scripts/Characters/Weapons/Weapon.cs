@@ -908,7 +908,11 @@ namespace MoreMountains.TopDownEngine
 				}
 			}
 		}
-
+		public void DirectDestructionWeapon()
+        {
+			TurnWeaponOff();
+			Destroy(this.gameObject);
+		}
 		/// <summary>
 		/// Applies the offset specified in the inspector
 		/// </summary>

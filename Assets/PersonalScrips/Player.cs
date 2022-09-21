@@ -52,10 +52,10 @@ public class Player : MonoBehaviour
         {
             if(character.objectGraping != null && character.objectGraping.GetComponent<PickableItem>().redyThrow==true && GetComponent<CharacterHandleWeapon>().CurrentWeapon!=null)
             {
-                   // GetComponent<CharacterHandleWeapon>().CurrentWeapon = null;
-                //GetComponentInParent<Character>().objectGraping.SetActive(true);
+                    // GetComponent<CharacterHandleWeapon>().CurrentWeapon = null;
+                    //GetComponentInParent<Character>().objectGraping.SetActive(true);
 
-                    Destroy(GetComponent<CharacterHandleWeapon>().CurrentWeapon.gameObject);
+                    GetComponent<CharacterHandleWeapon>().CurrentWeapon.gameObject.GetComponent<Weapon>().DirectDestructionWeapon();
                     GetComponent<Character>().objectGraping.GetComponent<ThrowItem>().ThrowObject();
                 }
         }
