@@ -12,6 +12,7 @@ public class GameManagerS : MonoBehaviour
     private void Awake()
     {
         curret = this;
+        startDestroing = true;
     }
     private void LateUpdate()
     {

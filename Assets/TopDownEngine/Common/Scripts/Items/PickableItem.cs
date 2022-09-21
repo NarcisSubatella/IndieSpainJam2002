@@ -89,7 +89,7 @@ namespace MoreMountains.TopDownEngine
 		}
         private void OnEnable()
         {
-			Invoke("EnableA", 0.5f);
+			Invoke("EnableA", 0.2f);
 		}
 		private void  EnableA()
         {
@@ -114,19 +114,23 @@ namespace MoreMountains.TopDownEngine
         /// <param name="collider">Other.</param>
         public virtual void OnTriggerStay2D(Collider2D collider) 
 		{
-			if (Input.GetButton ("Player1_Interact")&& this._pickable==true)
+			if(collider.gameObject.CompareTag("Player"))
             {
-					_pickable = false;
-					Invoke("ThrowRedy", 1);
 
-					if(collider.gameObject.GetComponent<Character>().objectGraping != null)
-                    {
-						DropPreviosItem(collider.gameObject.GetComponent<Character>().objectGraping);
-                    }
-					_collidingObject = collider.gameObject;
-					collider.gameObject.GetComponent<Character>().objectGraping = this.gameObject;
-					PickItem (collider.gameObject);
+				if (Input.GetButton ("Player1_Interact")&& this._pickable==true)
+				{
+						_pickable = false;
+						Invoke("ThrowRedy", 1);
+
+						if(collider.gameObject.GetComponent<Character>().objectGraping != null)
+						{
+							DropPreviosItem(collider.gameObject.GetComponent<Character>().objectGraping);
+						}
+						_collidingObject = collider.gameObject;
+						collider.gameObject.GetComponent<Character>().objectGraping = this.gameObject;
+						PickItem (collider.gameObject);
                 
+				}
             }
 		}
 		/// <summary>

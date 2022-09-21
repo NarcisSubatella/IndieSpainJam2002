@@ -57,7 +57,8 @@ public class Player : MonoBehaviour
 
                     GetComponent<CharacterHandleWeapon>().CurrentWeapon.gameObject.GetComponent<Weapon>().DirectDestructionWeapon();
                     GetComponent<Character>().objectGraping.GetComponent<ThrowItem>().ThrowObject();
-                }
+                    GameManager.current.ConsumeWrath(0);
+            }
         }
     }
         private void DropItem()

@@ -220,8 +220,14 @@ namespace MoreMountains.TopDownEngine
 			{
 				return;
 			}
+			if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonPressed))
+			{
+				Debug.Log("apretando");
+			}
 			if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonDown) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonDown))
 			{
+				Debug.Log("soltando");
+				
 				ShootStart();
 			}
 
@@ -322,6 +328,7 @@ namespace MoreMountains.TopDownEngine
 			}
 			PlayAbilityStartFeedbacks();
 			CurrentWeapon.WeaponInputStart();
+			GameManager.current.ConsumeWrath(0);
 		}
 
 		/// <summary>

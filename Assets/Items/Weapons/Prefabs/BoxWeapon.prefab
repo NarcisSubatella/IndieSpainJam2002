@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6588956548767793925}
   - component: {fileID: 2818803576392631159}
   - component: {fileID: 2818803576392631156}
+  - component: {fileID: 1702819509}
   m_Layer: 23
   m_Name: BoxWeapon
   m_TagString: Untagged
@@ -185,7 +186,7 @@ MonoBehaviour:
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 6588956548212095896}
-  FeedbackIsProportionalToDamage: 0
+  FeedbackIsProportionalToDamage: 1
   PreventTakeSelfDamage: 0
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
@@ -250,6 +251,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: 0cc52c14d71ec5c448d3fd0892aeca1e, type: 2}
   currentlife: 0
+--- !u!114 &1702819509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2301816474999606735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76891b3b532f84acaaeed44c357bd00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 8388608
+  Owner: {fileID: 0}
+  TriggerFilter: 64
+  MinDamageCaused: 1
+  MaxDamageCaused: 3
+  TypedDamages: []
+  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackDirection: 1
+  DamageCausedKnockbackForce: {x: 0, y: 0, z: 0}
+  InvincibilityDuration: 0.5
+  RepeatDamageOverTime: 0
+  AmountOfRepeats: 3
+  DurationBetweenRepeats: 1
+  DamageOverTimeInterruptible: 1
+  RepeatedDamageType: {fileID: 0}
+  DamageTakenEveryTime: 1
+  DamageTakenDamageable: 1
+  DamageTakenNonDamageable: 1
+  DamageTakenKnockbackType: 1
+  DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
+  DamageTakenInvincibilityDuration: 0.5
+  HitDamageableFeedback: {fileID: 0}
+  HitNonDamageableFeedback: {fileID: 0}
+  HitAnythingFeedback: {fileID: 0}
+  HitDamageableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HitNonDamageableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HitAnythingEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6588956548212095899
 GameObject:
   m_ObjectHideFlags: 0

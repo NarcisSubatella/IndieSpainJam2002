@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using MoreMountains.TopDownEngine;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -11,14 +12,14 @@ public class CanvasManager : MonoBehaviour
     private int wrathInt;
     private void Start()
     {
-        wrahtSlider.maxValue = GameManagerS.curret.maxWrath; 
-        wrahtSlider.value = GameManagerS.curret.maxWrath; 
+        wrahtSlider.maxValue = GameManager.current.maxWrath; 
+        wrahtSlider.value = GameManager.current.maxWrath; 
     }
     private void LateUpdate()
     {
-        wrathInt = (int)GameManagerS.curret.maxWrath;
+        wrathInt = (int)GameManager.current.maxWrath;
 
-        wrahtSlider.value = GameManagerS.curret.maxWrath;
+        wrahtSlider.value = GameManager.current.maxWrath;
         wrathTxt.text = wrathInt.ToString()+"%";
     }
 }

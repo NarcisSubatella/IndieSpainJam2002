@@ -4,6 +4,7 @@ using MoreMountains.Tools;
 using System.Collections.Generic;
 using MoreMountains.InventoryEngine;
 using MoreMountains.Feedbacks;
+using System;
 
 namespace MoreMountains.TopDownEngine
 {
@@ -133,7 +134,13 @@ namespace MoreMountains.TopDownEngine
 			PointOfEntryIndex = pointOfEntryIndex;
 		}
 	}
+	[Serializable]
+	public class CosumeWrath
+    {
+		public string concept;
+		public float quatity;
 
+    }
 	/// <summary>
 	/// The game manager is a persistent singleton that handles points and time
 	/// </summary>
@@ -190,6 +197,14 @@ namespace MoreMountains.TopDownEngine
 		protected int _initialMaximumLives;
 		protected int _initialCurrentLives;
 
+		//Wrath
+		public float maxWrath = 100;
+		private float decreaseSpeed = 0.1f;
+		[SerializeField] private bool startDestroing = false;
+		public CosumeWrath[] cosumeWrath;
+
+		public static GameManager current;
+
 		/// <summary>
 		/// On Awake we initialize our list of points of entry
 		/// </summary>
@@ -197,6 +212,8 @@ namespace MoreMountains.TopDownEngine
 		{
 			base.Awake ();
 			PointsOfEntry = new List<PointsOfEntryStorage> ();
+			current = this;
+			startDestroing = true;
 		}
 
 		/// <summary>
@@ -208,7 +225,33 @@ namespace MoreMountains.TopDownEngine
 			_initialCurrentLives = CurrentLives;
 			_initialMaximumLives = MaximumLives;
 		}
-					
+        private void LateUpdate()
+        {
+			WrahtCountDown();
+		}
+        //propios
+        private void WrahtCountDown()
+		{
+			if (startDestroing)
+			{
+				maxWrath -= decreaseSpeed * Time.deltaTime;
+				if (maxWrath <= 0)
+				{
+					Debug.Log("WrathOver");
+					startDestroing = false;
+				}
+			}
+		}
+		//propio
+		/*public void WrathConsume(int quantity)
+		{
+			maxWrath -= quantity;
+		}*/
+		public void ConsumeWrath(int consumeWhartPos)
+        {
+			maxWrath -= cosumeWrath[consumeWhartPos].quatity; ;
+        }
+
 		/// <summary>
 		/// this method resets the whole game manager
 		/// </summary>
