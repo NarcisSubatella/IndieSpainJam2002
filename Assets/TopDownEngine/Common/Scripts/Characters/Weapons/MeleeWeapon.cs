@@ -90,7 +90,7 @@ namespace MoreMountains.TopDownEngine
 		protected BoxCollider _boxCollider;
 		protected SphereCollider _sphereCollider;
 		protected Vector3 _gizmoOffset;
-		protected DamageOnTouch _damageOnTouch;
+		public DamageOnTouch _damageOnTouch;
 		protected GameObject _damageArea;
 
 		/// <summary>
@@ -109,6 +109,22 @@ namespace MoreMountains.TopDownEngine
 			{
 				_damageOnTouch.Owner = Owner.gameObject;
 			}            
+		}
+		public void ChangeDamageValue( int getForce)
+        {
+			MinDamageCaused *= getForce;
+			MaxDamageCaused *= getForce;
+		
+		   _damageOnTouch.MinDamageCaused = MinDamageCaused;
+		   _damageOnTouch.MaxDamageCaused = MaxDamageCaused;
+        }
+		public void RestoreDamageValue(int min, int max)
+        {
+			MinDamageCaused = min;
+			MaxDamageCaused = max;
+
+			_damageOnTouch.MinDamageCaused = MinDamageCaused;
+			_damageOnTouch.MaxDamageCaused = MaxDamageCaused;
 		}
 
 		/// <summary>

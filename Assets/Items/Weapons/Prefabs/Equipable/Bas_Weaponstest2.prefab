@@ -825,7 +825,7 @@ Animator:
   m_GameObject: {fileID: 7332335416622122188}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e64b57d28c476b444b17eecf070bb298, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9f4b6283996b6e84c83c508d1ad39144, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 7650727955376197922}
   - component: {fileID: 7650680909340306332}
   m_Layer: 10
-  m_Name: Weaponstest2
+  m_Name: Bas_Weaponstest2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

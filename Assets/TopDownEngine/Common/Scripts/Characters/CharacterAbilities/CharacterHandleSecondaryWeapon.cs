@@ -16,10 +16,22 @@ namespace MoreMountains.TopDownEngine
 		/// the ID / index of this CharacterHandleWeapon. This will be used to determine what handle weapon ability should equip a weapon.
 		/// If you create more Handle Weapon abilities, make sure to override and increment this  
 		public override int HandleWeaponID { get { return 2; } }
-        
+
 		/// <summary>
 		/// Gets input and triggers methods based on what's been pressed
 		/// </summary>
+		public float getForce = 0;
+		public int maxMultiplicator=3;
+		//public Animator pjAnim;
+
+
+        private void Activator(bool activator)
+        {
+			GetComponentInParent<CharacterMovement>().InputAuthorized = activator;
+			//GetComponentInParent<Character>().enabled = activator;
+			GetComponentInParent<CharacterHandleWeapon>().AbilityPermitted = activator;
+			//pjAnim = GetComponentInParent<Animator>();
+		}
 		protected override void HandleInput()
 		{
 			if (!AbilityAuthorized
@@ -27,12 +39,21 @@ namespace MoreMountains.TopDownEngine
 			{
 				return;
 			}
-			if ((_inputManager.SecondaryShootButton.State.CurrentState == MMInput.ButtonStates.ButtonDown) || (_inputManager.SecondaryShootAxis == MMInput.ButtonStates.ButtonDown))
+			if ((_inputManager.SecondaryShootButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed) || (_inputManager.SecondaryShootAxis == MMInput.ButtonStates.ButtonPressed))
 			{
-				ShootStart();
-			}
+				if(CurrentWeapon != null)
+				{
+					if(getForce<maxMultiplicator)
+                    {
+						getForce += Time.deltaTime;
+						Activator(false);
+						//GetComponentInParent<Animator>().SetBool("SupAtk", true);
+                    }
 
-			if (CurrentWeapon != null)
+				}
+			}
+			
+			/*if (CurrentWeapon != null)
 			{
 				bool buttonPressed =
 					(_inputManager.SecondaryShootButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed) ||
@@ -42,16 +63,36 @@ namespace MoreMountains.TopDownEngine
 				{
 					ShootStart();
 				}
-			}
+			}*/
 
 			if (_inputManager.ReloadButton.State.CurrentState == MMInput.ButtonStates.ButtonDown)
 			{
 				Reload();
 			}
 
+			//si se suelta el boton, añade daño y ataca
 			if ((_inputManager.SecondaryShootButton.State.CurrentState == MMInput.ButtonStates.ButtonUp) || (_inputManager.SecondaryShootAxis == MMInput.ButtonStates.ButtonUp))
 			{
-				ShootStop();
+				if (CurrentWeapon != null)
+                {
+
+					minD = CurrentWeapon.GetComponent<MeleeWeapon>().MinDamageCaused;
+				    maxD = CurrentWeapon.GetComponent<MeleeWeapon>().MaxDamageCaused;
+
+					if(minD < getForce && maxD < getForce)
+                    {
+						CurrentWeapon.GetComponent<MeleeWeapon>().ChangeDamageValue((int)getForce);
+						GameManager.current.ConsumeWrath(0,true,(int)getForce);
+					}
+						ShootStart();
+						Invoke("RestoreD", 1);	
+						getForce = 0;
+
+					Activator(true);
+				}
+
+
+				//ShootStop();
 			}
 
 			if (CurrentWeapon != null)
@@ -69,5 +110,12 @@ namespace MoreMountains.TopDownEngine
 				ShootStart();
 			}
 		}
+		int minD;
+		int maxD;
+		private void RestoreD()
+        {
+			CurrentWeapon.GetComponent<MeleeWeapon>().RestoreDamageValue(minD, maxD);
+		}
 	}
+
 }

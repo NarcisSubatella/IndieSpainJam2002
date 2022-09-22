@@ -233,7 +233,7 @@ namespace MoreMountains.TopDownEngine
 			if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonDown) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonUp))
 			{
 				ShootStart();
-				
+				GameManager.current.ConsumeWrath(0,false,0);
 				/*if(chargeAtk < 0.5f)
                 {
 				Debug.Log("soltando");
@@ -342,7 +342,7 @@ namespace MoreMountains.TopDownEngine
 			}
 			PlayAbilityStartFeedbacks();
 			CurrentWeapon.WeaponInputStart();
-			GameManager.current.ConsumeWrath(0);
+			
 		}
 
 		/// <summary>

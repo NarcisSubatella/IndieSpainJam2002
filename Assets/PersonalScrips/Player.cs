@@ -54,10 +54,15 @@ public class Player : MonoBehaviour
             {
                     // GetComponent<CharacterHandleWeapon>().CurrentWeapon = null;
                     //GetComponentInParent<Character>().objectGraping.SetActive(true);
+                    if (GetComponent<CharacterHandleSecondaryWeapon>().CurrentWeapon !=null)
+                    {
+                        GetComponent<CharacterHandleSecondaryWeapon>().CurrentWeapon.gameObject.GetComponent<Weapon>().DirectDestructionWeapon();
+
+                    }
 
                     GetComponent<CharacterHandleWeapon>().CurrentWeapon.gameObject.GetComponent<Weapon>().DirectDestructionWeapon();
                     GetComponent<Character>().objectGraping.GetComponent<ThrowItem>().ThrowObject();
-                    GameManager.current.ConsumeWrath(0);
+                    GameManager.current.ConsumeWrath(0, false, 0);
             }
         }
     }

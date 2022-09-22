@@ -247,9 +247,16 @@ namespace MoreMountains.TopDownEngine
 		{
 			maxWrath -= quantity;
 		}*/
-		public void ConsumeWrath(int consumeWhartPos)
+		public void ConsumeWrath(int consumeWhartPos,bool variableCost,int multiplicator)
         {
-			maxWrath -= cosumeWrath[consumeWhartPos].quatity; ;
+			if(!variableCost)
+			{ 
+				maxWrath -= cosumeWrath[consumeWhartPos].quatity;
+			}
+			else
+            {
+				maxWrath -= cosumeWrath[consumeWhartPos].quatity *= multiplicator;
+			}
         }
 
 		/// <summary>
