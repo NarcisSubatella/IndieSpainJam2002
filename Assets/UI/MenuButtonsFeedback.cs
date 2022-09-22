@@ -16,6 +16,7 @@ public class MenuButtonsFeedback : MonoBehaviour, IPointerEnterHandler, IPointer
         menu = GameObject.FindGameObjectWithTag("MenuController").GetComponent<MenuManager>();
         textmeshPro = transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
         textmeshPro.color = new Color32(255, 162, 0, 255);
+        PlayerPrefs.SetInt("PJ1", 0);
     }
 
     // Update is called once per frame
@@ -49,6 +50,14 @@ public class MenuButtonsFeedback : MonoBehaviour, IPointerEnterHandler, IPointer
     {
         textmeshPro.color = new Color32(255, 162, 0, 255);
         LeanTween.scale(transform.GetChild(0).gameObject, new Vector3(1f, 1f, 1f), 0.2f).setEaseInOutCubic();
+        soundPlayed = false;
+    }
+
+    public void ReturnToNormal()
+    {
+        textmeshPro.color = new Color32(255, 255, 255, 255);
+        menu.HoverButton();
+        LeanTween.scale(transform.GetChild(0).gameObject, new Vector3(1.20f, 1.20f, 1.20f), 0.2f).setEaseInOutCubic();
         soundPlayed = false;
     }
     /*
