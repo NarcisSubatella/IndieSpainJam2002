@@ -372,6 +372,7 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void TurnWeaponOn()
 		{
+
 			TriggerWeaponStartFeedback();
 			WeaponState.ChangeState(WeaponStates.WeaponStart);
 			if ((_characterMovement != null) && (ModifyMovementWhileAttacking))

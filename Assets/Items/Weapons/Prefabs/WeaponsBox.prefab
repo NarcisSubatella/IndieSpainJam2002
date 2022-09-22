@@ -918,7 +918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WeaponName: KoalaSword
   WeaponCurrentlyActive: 1
-  TriggerMode: 0
+  TriggerMode: 1
   DelayBeforeUse: 0.4
   DelayBeforeUseReleaseInterruption: 0
   TimeBetweenUses: 0.1
@@ -944,7 +944,7 @@ MonoBehaviour:
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 0
   MovementMultiplier: 0
-  PreventAllMovementWhileInUse: 1
+  PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
   RecoilForce: 0
   Animators:

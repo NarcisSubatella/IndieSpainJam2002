@@ -209,26 +209,41 @@ namespace MoreMountains.TopDownEngine
 				}
 			}
 		}
-
+		
 		/// <summary>
 		/// Gets input and triggers methods based on what's been pressed
 		/// </summary>
 		protected override void HandleInput()
 		{
+
 			if (!AbilityAuthorized
 			    || (_condition.CurrentState != CharacterStates.CharacterConditions.Normal))
 			{
 				return;
 			}
-			if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonPressed))
+			/*if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonPressed))
 			{
-				Debug.Log("apretando");
-			}
-			if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonDown) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonDown))
+					chargeAtk += Time.deltaTime;
+					boolCharging = true;
+				if(chargeAtk>=0.5f)
+                {
+					Debug.Log(chargeAtk);
+                }
+			}*/
+			if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonDown) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonUp))
 			{
-				Debug.Log("soltando");
-				
 				ShootStart();
+				
+				/*if(chargeAtk < 0.5f)
+                {
+				Debug.Log("soltando");
+					chargeAtk = 0;
+                }
+				if(chargeAtk >= 0.5f)
+                {
+					Debug.Log("Atk Cargado");
+					chargeAtk = 0;
+				}*/
 			}
 
 			if (CurrentWeapon != null)
@@ -305,8 +320,7 @@ namespace MoreMountains.TopDownEngine
 			    || (_condition.CurrentState != CharacterStates.CharacterConditions.Normal))
 			{
 				return;
-			}
-
+			}			
 			//  if we've decided to buffer input, and if the weapon is in use right now
 			if (BufferInput && (CurrentWeapon.WeaponState.CurrentState != Weapon.WeaponStates.WeaponIdle))
 			{
