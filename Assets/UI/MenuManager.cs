@@ -6,8 +6,7 @@ using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject mMenuComponents, mMenuPanel, settingsComponents, creditsComponents, surePanel, selectorPanel, sPlayersComponents, s1PlayerCompo, s2PlayerCompo, 
-        textSoloPlayer, photoSoloPlayer, textJ1, textJ2, photoJ1, photoJ2;
+    public GameObject mMenuComponents, mMenuPanel, settingsComponents, creditsComponents, surePanel, selectorPanel, sPlayersComponents, s1PlayerCompo, s2PlayerCompo;
     public AudioClip hoverButton, clickButton;
     public AudioSource audioSource;
     // Start is called before the first frame update
@@ -47,7 +46,6 @@ public class MenuManager : MonoBehaviour
 
     public void HoverButton()
     {
-        print("NADA");
         audioSource.clip = hoverButton;
         audioSource.Play();
     }

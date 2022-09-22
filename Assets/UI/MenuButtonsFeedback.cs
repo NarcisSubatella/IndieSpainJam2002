@@ -8,12 +8,14 @@ using UnityEngine.EventSystems;
 public class MenuButtonsFeedback : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     MenuManager menu;
+    TextMeshProUGUI textmeshPro;
     bool soundPlayed = false;
     // Start is called before the first frame update
     void Awake()
     {
         menu = GameObject.FindGameObjectWithTag("MenuController").GetComponent<MenuManager>();
-
+        textmeshPro = transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+        textmeshPro.color = new Color32(255, 162, 0, 255);
     }
 
     // Update is called once per frame
@@ -27,15 +29,26 @@ public class MenuButtonsFeedback : MonoBehaviour, IPointerEnterHandler, IPointer
     {
         if (soundPlayed == false)
         {
-
+            
+            textmeshPro.color = new Color32(255, 255, 255, 255);
             menu.HoverButton();
-            LeanTween.scale(transform.GetChild(0).gameObject, new Vector3(0.10f, 0.10f, 0.10f), 0.2f).setEaseInOutCubic();
+            LeanTween.scale(transform.GetChild(0).gameObject, new Vector3(1.20f, 1.20f, 1.20f), 0.2f).setEaseInOutCubic();
             soundPlayed = true;
         }
     }
+    public void OnPointerDown(PointerEventData pointerEventData)
+    {
+        print("AQUI NO ENTRA");
+        textmeshPro.color = new Color32(255, 162, 0, 255);
+        LeanTween.scale(transform.GetChild(0).gameObject, new Vector3(1f, 1f, 1f), 0.2f).setEaseInOutCubic();
+        soundPlayed = false;
+
+    }
+
     public void OnPointerExit(PointerEventData pointerEventData)
     {
-        LeanTween.scale(transform.GetChild(0).gameObject, new Vector3(0.65f, 0.65f, 0.65f), 0.2f).setEaseInOutCubic();
+        textmeshPro.color = new Color32(255, 162, 0, 255);
+        LeanTween.scale(transform.GetChild(0).gameObject, new Vector3(1f, 1f, 1f), 0.2f).setEaseInOutCubic();
         soundPlayed = false;
     }
     /*
