@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AimControl: 1
-  RotationMode: 3
+  RotationMode: 1
   WeaponRotationSpeed: 0
   MinimumAngle: -180
   MaximumAngle: 180
@@ -990,6 +990,7 @@ MonoBehaviour:
   KnockbackForce: {x: 500, y: 0, z: 0}
   InvincibilityDuration: 0.2
   CanDamageOwner: 0
+  _damageOnTouch: {fileID: 0}
 --- !u!1 &7763974349410370968
 GameObject:
   m_ObjectHideFlags: 0

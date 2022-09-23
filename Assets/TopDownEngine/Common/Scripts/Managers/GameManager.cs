@@ -255,7 +255,7 @@ namespace MoreMountains.TopDownEngine
 			}
 			else
             {
-				maxWrath -= cosumeWrath[consumeWhartPos].quatity *= multiplicator;
+				maxWrath -= cosumeWrath[consumeWhartPos].quatity * multiplicator;
 			}
         }
 

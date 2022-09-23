@@ -22,15 +22,17 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public float getForce = 0;
 		public int maxMultiplicator=3;
-		//public Animator pjAnim;
+		private Animator pjAnim;
 
 
         private void Activator(bool activator)
         {
+		//	GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject.SetActive(activator);
 			GetComponentInParent<CharacterMovement>().InputAuthorized = activator;
 			//GetComponentInParent<Character>().enabled = activator;
 			GetComponentInParent<CharacterHandleWeapon>().AbilityPermitted = activator;
 			//pjAnim = GetComponentInParent<Animator>();
+			pjAnim = GetComponentInParent<Character>().CharacterAnimator;
 		}
 		protected override void HandleInput()
 		{
@@ -46,7 +48,14 @@ namespace MoreMountains.TopDownEngine
 					if(getForce<maxMultiplicator)
                     {
 						getForce += Time.deltaTime;
-						Activator(false);
+						if(GetComponentInParent<Character>().CharacterAnimator.GetBool("SupAtk2")== false)
+                        {
+							
+							pjAnim = GetComponentInParent<Character>().CharacterAnimator;
+							Activator(false);
+							pjAnim.SetTrigger("SupAtk");
+							pjAnim.SetBool("SupAtk2",true);
+                        }
 						//GetComponentInParent<Animator>().SetBool("SupAtk", true);
                     }
 
@@ -84,10 +93,12 @@ namespace MoreMountains.TopDownEngine
 						CurrentWeapon.GetComponent<MeleeWeapon>().ChangeDamageValue((int)getForce);
 						GameManager.current.ConsumeWrath(0,true,(int)getForce);
 					}
-						ShootStart();
+					GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject.SetActive(false);
+					ShootStart();
 						Invoke("RestoreD", 1);	
+						Invoke("RestoreWeapom", 2);	
 						getForce = 0;
-
+					pjAnim.SetBool("SupAtk2", false);
 					Activator(true);
 				}
 
@@ -115,6 +126,10 @@ namespace MoreMountains.TopDownEngine
 		private void RestoreD()
         {
 			CurrentWeapon.GetComponent<MeleeWeapon>().RestoreDamageValue(minD, maxD);
+		}
+		private void RestoreWeapom()
+        {
+			GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject.SetActive(true);
 		}
 	}
 

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5397099765268962954}
   - component: {fileID: 5397099765268962958}
   - component: {fileID: 5397099765268962959}
+  - component: {fileID: 1658885941}
   m_Layer: 23
   m_Name: KeyBoardWeapon
   m_TagString: Untagged
@@ -244,6 +245,32 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
+--- !u!114 &1658885941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5397099765268962953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a02fbe9f0e8c0438f53aad6b1562e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickedMMFeedbacks: {fileID: 0}
+  DisableColliderOnPick: 1
+  DisableObjectOnPick: 1
+  DisableDelay: 0
+  DisableModelOnPick: 0
+  DisableTargetObjectOnPick: 0
+  TargetObjectToDisable: {fileID: 0}
+  TargetObjectDisableDelay: 1
+  Model: {fileID: 0}
+  _pickable: 0
+  redyThrow: 0
+  WeaponToGive: {fileID: 7651225604507479538, guid: 7b0ac7028a33a60449b29c48f5eba355,
+    type: 3}
+  HandleWeaponID: 2
 --- !u!1 &5507569368157265795
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,14 +295,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5507569368157265795}
-  m_LocalRotation: {x: -0, y: -0, z: 0.20352146, w: 0.97907054}
-  m_LocalPosition: {x: 0.66, y: 0.14, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3853957864819217524}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 23.486}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6723324007581777669
 SpriteRenderer:
   m_ObjectHideFlags: 0
