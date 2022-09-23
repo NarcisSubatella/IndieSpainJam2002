@@ -20,5 +20,6 @@ public class Items
 {
     public string itemName;
     public int quiatity;
+    public int price;
 
 }
