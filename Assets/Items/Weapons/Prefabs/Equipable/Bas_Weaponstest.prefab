@@ -741,6 +741,7 @@ GameObject:
   - component: {fileID: 6586615890414199581}
   - component: {fileID: 3223640176130276246}
   - component: {fileID: 324230856041357735}
+  - component: {fileID: 1303045504732766016}
   m_Layer: 10
   m_Name: KeyBoart
   m_TagString: Untagged
@@ -755,14 +756,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7332335416622122188}
-  m_LocalRotation: {x: -0, y: -0, z: -0.3663528, w: 0.93047607}
-  m_LocalPosition: {x: -0.401, y: -0.421, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7757936437714839020}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.982}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3223640176130276246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -835,6 +836,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1303045504732766016
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7332335416622122188}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.52070504, y: 0.0054727346}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 0.8}
+    newSize: {x: 6.4, y: 6.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2148942, y: 0.5333067}
+  m_EdgeRadius: 0
 --- !u!1 &7763928523574642076
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,8 +876,9 @@ GameObject:
   - component: {fileID: 8073471096375353218}
   - component: {fileID: 7650727955376197922}
   - component: {fileID: 7650680909340306332}
+  - component: {fileID: 7741730651817314816}
   m_Layer: 10
-  m_Name: Bas_Weaponstest2
+  m_Name: Bas_Weaponstest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -889,7 +917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AimControl: 1
-  RotationMode: 3
+  RotationMode: 1
   WeaponRotationSpeed: 0
   MinimumAngle: -180
   MaximumAngle: 180
@@ -935,7 +963,7 @@ MonoBehaviour:
   NoInputReload: 0
   ReloadTime: 2
   AmmoConsumedPerShot: 1
-  AutoDestroyWhenEmpty: 0
+  AutoDestroyWhenEmpty: 1
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 30
   WeaponAttachmentOffset: {x: 0.185, y: 0.31, z: 0}
@@ -992,7 +1020,8 @@ MonoBehaviour:
   Knockback: 1
   KnockbackForce: {x: 500, y: 0, z: 0}
   InvincibilityDuration: 0.2
-  CanDamageOwner: 0
+  CanDamageOwner: 1
+  _damageOnTouch: {fileID: 0}
 --- !u!114 &8073471096375353218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,6 +1108,7 @@ MonoBehaviour:
   KnockbackForce: {x: 500, y: 0, z: 0}
   InvincibilityDuration: 0.5
   CanDamageOwner: 0
+  _damageOnTouch: {fileID: 0}
 --- !u!114 &7650727955376197922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,6 +1195,7 @@ MonoBehaviour:
   KnockbackForce: {x: 500, y: 0, z: 0}
   InvincibilityDuration: 0.5
   CanDamageOwner: 0
+  _damageOnTouch: {fileID: 0}
 --- !u!114 &7650680909340306332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,6 +1214,51 @@ MonoBehaviour:
   Weapons: []
   OwnerCharacterHandleWeapon: {fileID: 0}
   TimeSinceLastWeaponStopped: 0
+--- !u!114 &7741730651817314816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7763928523574642076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01754710d9f92ec4d9a21b81f5682667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Model: {fileID: 0}
+  CurrentHealth: 0
+  Invulnerable: 0
+  InitialHealth: 5
+  MaximumHealth: 5
+  ResetHealthOnEnable: 0
+  ImmuneToDamage: 0
+  DamageMMFeedbacks: {fileID: 0}
+  FeedbackIsProportionalToDamage: 0
+  PreventTakeSelfDamage: 0
+  ImmuneToKnockback: 0
+  ImmuneToKnockbackIfZeroDamage: 0
+  KnockbackForceMultiplier: 1
+  DestroyOnDeath: 1
+  DelayBeforeDestruction: 0
+  PointsWhenDestroyed: 0
+  RespawnAtInitialLocation: 0
+  DisableControllerOnDeath: 1
+  DisableModelOnDeath: 1
+  DisableCollisionsOnDeath: 1
+  DisableChildCollisionsOnDeath: 0
+  ChangeLayerOnDeath: 0
+  ChangeLayersRecursivelyOnDeath: 0
+  LayerOnDeath:
+    _layerIndex: 0
+  DeathMMFeedbacks: {fileID: 0}
+  ResetColorOnRevive: 1
+  ColorMaterialPropertyName: _Color
+  UseMaterialPropertyBlocks: 0
+  MasterHealth: {fileID: 0}
+  TargetDamageResistanceProcessor: {fileID: 0}
+  TargetAnimator: {fileID: 0}
+  DisableAnimatorLogs: 1
 --- !u!1 &7763974349410370968
 GameObject:
   m_ObjectHideFlags: 0
