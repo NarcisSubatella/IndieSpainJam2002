@@ -276,7 +276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SI
+  m_text: YES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir
+  m_text: Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AJUSTES
+  m_text: SETTINGS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugar
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Artista
+  m_text: Artist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Elige tu personaje
+  m_text: Choose a Character
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sonidos
+  m_text: Sounds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -1858,7 +1858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cr\xE9ditos"
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -2825,18 +2825,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 496859887}
-        m_TargetAssemblyTypeName: MenuButtonsFeedback, Assembly-CSharp
-        m_MethodName: ReturnToNormal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &496859884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,7 +3018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Arte
+  m_text: Art
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -3220,7 +3208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "M\xFAsica"
+  m_text: Music
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -4655,7 +4643,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Programaci\xF3n y dise\xF1o"
+  m_text: Code & Design
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -4807,7 +4795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atr\xE1s"
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -5117,7 +5105,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Artista
+  m_text: Artist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -5585,7 +5573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atr\xE1s"
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -5699,8 +5687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.3167915, y: -86.84909}
-  m_SizeDelta: {x: 52.1949, y: -80.5098}
+  m_AnchoredPosition: {x: 6.8, y: -92.5}
+  m_SizeDelta: {x: 66.2468, y: -80.5098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1108794163
 MonoBehaviour:
@@ -5737,7 +5725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Arma: Lapiz Wacom'
+  m_text: 'Weapon: Wacom Pen'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -6041,7 +6029,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atr\xE1s"
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -6340,7 +6328,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atr\xE1s"
+  m_text: 'Back
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -6492,7 +6482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Elige tu personaje
+  m_text: Choose a Character
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -6606,8 +6596,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000038146973, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.653, y: 0.8925}
+  m_SizeDelta: {x: 5.306, y: -1.785}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1216442813
 MonoBehaviour:
@@ -6644,7 +6634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ajustes
+  m_text: Settings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -7482,7 +7472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugar
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -7826,7 +7816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: J2
+  m_text: P2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -8130,7 +8120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Producci\xF3n y dise\xF1o"
+  m_text: Production & Design
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -8266,7 +8256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugar
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -9031,7 +9021,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atr\xE1s"
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -9226,7 +9216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: J1
+  m_text: P1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -9462,7 +9452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CR\xC9DITOS"
+  m_text: CREDITS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -9776,7 +9766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.2000046, y: -94.923706}
+  m_AnchoredPosition: {x: -1.2000046, y: -92.5}
   m_SizeDelta: {x: 65.662, y: -75.0586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1834457917
@@ -9814,7 +9804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Artista
+  m_text: Artist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -9966,7 +9956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Elige cu\xE1ntos jugadores"
+  m_text: Choose number of Players
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -10529,7 +10519,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Arma: Lapiz Wacom'
+  m_text: 'Weapon: Wacom Pen'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -10681,7 +10671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xBFEst\xE1s seguro?"
+  m_text: Are you sure?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
@@ -11139,8 +11129,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.3167915, y: -86.84909}
-  m_SizeDelta: {x: 52.1949, y: -80.5098}
+  m_AnchoredPosition: {x: 10.145691, y: -90.5}
+  m_SizeDelta: {x: 65.8527, y: -80.1304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2064612465
 MonoBehaviour:
@@ -11177,7 +11167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Arma: Lapiz Wacom'
+  m_text: 'Weapon: Wacom Pen'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e42185a52f6eab4aba75e6dd3174c31, type: 2}
   m_sharedMaterial: {fileID: -8450900649847667661, guid: 6e42185a52f6eab4aba75e6dd3174c31,
