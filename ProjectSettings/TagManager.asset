@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - World
   - NoMask
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -60,4 +61,7 @@ TagManager:
     locked: 0
   - name: Above
     uniqueID: 961700441
+    locked: 0
+  - name: Obstacles
+    uniqueID: 1479419557
     locked: 0

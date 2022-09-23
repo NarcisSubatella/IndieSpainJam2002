@@ -50,7 +50,10 @@ namespace MoreMountains.TopDownEngine
 						getForce += Time.deltaTime;
 						if(GetComponentInParent<Character>().CharacterAnimator.GetBool("SupAtk2")== false)
                         {
-							
+							if(GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject!=null)
+                            {
+							GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject.SetActive(false);
+                            }
 							pjAnim = GetComponentInParent<Character>().CharacterAnimator;
 							Activator(false);
 							pjAnim.SetTrigger("SupAtk");
@@ -93,10 +96,15 @@ namespace MoreMountains.TopDownEngine
 						CurrentWeapon.GetComponent<MeleeWeapon>().ChangeDamageValue((int)getForce);
 						GameManager.current.ConsumeWrath(0,true,(int)getForce);
 					}
-					GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject.SetActive(false);
+					
 					ShootStart();
-						Invoke("RestoreD", 1);	
+						Invoke("RestoreD", 1);
+
+					if (GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject != null)
+                    {
 						Invoke("RestoreWeapom", 2);	
+
+                    }
 						getForce = 0;
 					pjAnim.SetBool("SupAtk2", false);
 					Activator(true);

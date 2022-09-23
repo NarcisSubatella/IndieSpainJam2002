@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2818803576392631159}
   - component: {fileID: 2818803576392631156}
   - component: {fileID: 1702819509}
+  - component: {fileID: 4643500496468754094}
   m_Layer: 23
   m_Name: BoxWeapon
   m_TagString: Untagged
@@ -250,7 +251,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: 0cc52c14d71ec5c448d3fd0892aeca1e, type: 2}
-  currentlife: 0
 --- !u!114 &1702819509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,6 +298,19 @@ MonoBehaviour:
   HitAnythingEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4643500496468754094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2301816474999606735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5082f070f644f614f9c058fe0acd7e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 0cc52c14d71ec5c448d3fd0892aeca1e, type: 2}
 --- !u!1 &6588956548212095899
 GameObject:
   m_ObjectHideFlags: 0

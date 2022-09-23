@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUpWeapons : MonoBehaviour
 {
-    private WeaponsSO weapon;
+    private ItemsSO weapon;
     private bool pickeable = true;
 
     private void Start()

@@ -5,43 +5,14 @@ using UnityEngine;
 
 public class ThrowItem : MonoBehaviour
 {
-    public WeaponsSO weapon;
-    [SerializeField] int currentlife;
+    public ItemsSO weapon;
     private Rigidbody2D rigidBody;
-    //public bool picked = false;
-
-  //  private PickableWeapon weaponPicker;
 
     private void Start()
     {
-       // currentlife = weapon.life;
-       // GetComponent<SpriteRenderer>().sprite = weapon.sprite;
-        rigidBody = GetComponent<Rigidbody2D>();
-
-        // weaponPicker = GetComponent<PickableWeapon>();
-        //weaponPicker.enabled = false;
-        //GetComponent<Collider2D>().enabled = false;
+        rigidBody = GetComponent<Rigidbody2D>();      
     }
-    /*private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && collision.GetComponent<Player>().grabingObject == false)
-        {
-            if (picked == false)
-            {
-                if (Input.GetButton("Player1_Interact"))
-                {
-                    if (weapon.weaponType == weaponsType.ThrowItem)
-                    {
-                        GetingItem(collision.GetComponent<Player>().topPos);
-                    }
-                    if (weapon.weaponType == weaponsType.Mele)
-                    {
-                        GetingItem(collision.GetComponent<Player>().sidePos);
-                    }
-                }
-            }
-        }
-    }*/
+    
 
     private void GetingItem(Transform pos)
     {
@@ -52,13 +23,7 @@ public class ThrowItem : MonoBehaviour
         GetComponentInParent<Player>().grabingObject = true;
         GetComponentInParent<Player>().objectGrabed = this.gameObject;
     }
-   /* private void LateUpdate()
-    {
-        if(Input.GetButton("Player1_Interact")/* && GetComponentInParent<Player>().objectGrabs == this.gameObject*/// && this.gameObject == GetComponentInParent<Character>().objectGraping)
-        //{
-            
-       // }
-  //  }*/
+   
     public void ThrowObject()
     {
         Physics2D.IgnoreLayerCollision(10, 23, true);

@@ -205,6 +205,8 @@ namespace MoreMountains.TopDownEngine
 
 		public static GameManager current;
 
+
+
 		/// <summary>
 		/// On Awake we initialize our list of points of entry
 		/// </summary>
