@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class MenuButtonsFeedback : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class MenuButtonsFeedback : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
     MenuManager menu;
     TextMeshProUGUI textmeshPro;
