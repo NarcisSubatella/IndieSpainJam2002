@@ -26,9 +26,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Alex";
             TMPRol = rolSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Diseñador";
+            TMPRol.text = "Designer";
             TMPWeapon = weaponSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Libreta";
+            TMPWeapon.text = "Weapon: Notebook";
 
             photoSoloPlayer.GetComponent<Image>().sprite = p3;
 
@@ -38,9 +38,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Pol";
             TMPRol = rolSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Programador";
+            TMPRol.text = "Programmer";
             TMPWeapon = weaponSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Teclado";
+            TMPWeapon.text = "Weapon: Keyboard";
 
             photoSoloPlayer.GetComponent<Image>().sprite = p2;
         }
@@ -49,9 +49,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Auri";
             TMPRol = rolSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Artista";
+            TMPRol.text = "Artist";
             TMPWeapon = weaponSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Lapiz Wacom";
+            TMPWeapon.text = "Weapon: Wacom Pen";
 
             photoSoloPlayer.GetComponent<Image>().sprite = p1;
         }
@@ -65,9 +65,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Alex";
             TMPRol = rolSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Diseñador";
+            TMPRol.text = "Designer";
             TMPWeapon = weaponSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Libreta";
+            TMPWeapon.text = "Weapon: Notebook";
 
             photoSoloPlayer.GetComponent<Image>().sprite = p3;
 
@@ -76,9 +76,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Pol";
             TMPRol = rolSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Programador";
+            TMPRol.text = "Programmer";
             TMPWeapon = weaponSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Teclado";
+            TMPWeapon.text = "Weapon: Keyboard";
 
             photoSoloPlayer.GetComponent<Image>().sprite = p2;
         }
@@ -87,9 +87,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Auri";
             TMPRol = rolSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Artista";
+            TMPRol.text = "Artist";
             TMPWeapon = weaponSoloPlayer.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Lapiz Wacom";
+            TMPWeapon.text = "Weapon: Wacom Pen";
 
             photoSoloPlayer.GetComponent<Image>().sprite = p1;
         }
@@ -102,9 +102,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ1.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Alex";
             TMPRol = rolJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Diseñador";
+            TMPRol.text = "Designer";
             TMPWeapon = weaponJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Libreta";
+            TMPWeapon.text = "Weapon: Notebook";
 
             photoJ1.GetComponent<Image>().sprite = p3;
 
@@ -114,9 +114,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ1.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Pol";
             TMPRol = rolJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Programador";
+            TMPRol.text = "Programmer";
             TMPWeapon = weaponJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Teclado";
+            TMPWeapon.text = "Weapon: Keyboard";
 
             photoJ1.GetComponent<Image>().sprite = p2;
         }
@@ -125,9 +125,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ1.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Auri";
             TMPRol = rolJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Artista";
+            TMPRol.text = "Artist";
             TMPWeapon = weaponJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Lapiz Wacom";
+            TMPWeapon.text = "Weapon: Wacom Pen";
 
             photoJ1.GetComponent<Image>().sprite = p1;
         }
@@ -140,9 +140,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ1.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Alex";
             TMPRol = rolJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Diseñador";
+            TMPRol.text = "Designer";
             TMPWeapon = weaponJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Libreta";
+            TMPWeapon.text = "Weapon: Notebook";
 
             photoJ1.GetComponent<Image>().sprite = p3;
 
@@ -152,9 +152,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ1.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Pol";
             TMPRol = rolJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Programador";
+            TMPRol.text = "Programmer";
             TMPWeapon = weaponJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Teclado";
+            TMPWeapon.text = "Weapon: Keyboard";
 
             photoJ1.GetComponent<Image>().sprite = p2;
         }
@@ -163,9 +163,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ1.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Auri";
             TMPRol = rolJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Artista";
+            TMPRol.text = "Artist";
             TMPWeapon = weaponJ1.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Lapiz Wacom";
+            TMPWeapon.text = "Weapon: Wacom Pen";
 
             photoJ1.GetComponent<Image>().sprite = p1;
         }
@@ -178,9 +178,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ2.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Alex";
             TMPRol = rolJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Diseñador";
+            TMPRol.text = "Designer";
             TMPWeapon = weaponJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Libreta";
+            TMPWeapon.text = "Weapon: Notebook";
 
             photoJ2.GetComponent<Image>().sprite = p3;
 
@@ -190,9 +190,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ2.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Pol";
             TMPRol = rolJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Programador";
+            TMPRol.text = "Programmer";
             TMPWeapon = weaponJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Teclado";
+            TMPWeapon.text = "Weapon: Keyboard";
 
             photoJ2.GetComponent<Image>().sprite = p2;
         }
@@ -201,9 +201,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ2.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Auri";
             TMPRol = rolJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Artista";
+            TMPRol.text = "Artist";
             TMPWeapon = weaponJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Lapiz Wacom";
+            TMPWeapon.text = "Weapon: Wacom Pen";
 
             photoJ2.GetComponent<Image>().sprite = p1;
         }
@@ -216,9 +216,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ2.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Alex";
             TMPRol = rolJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Diseñador";
+            TMPRol.text = "Designer";
             TMPWeapon = weaponJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Libreta";
+            TMPWeapon.text = "Weapon: Notebook";
 
             photoJ2.GetComponent<Image>().sprite = p3;
 
@@ -228,9 +228,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ2.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Pol";
             TMPRol = rolJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Programador";
+            TMPRol.text = "Programmer";
             TMPWeapon = weaponJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Teclado";
+            TMPWeapon.text = "Weapon: Keyboard";
 
             photoJ2.GetComponent<Image>().sprite = p2;
         }
@@ -239,9 +239,9 @@ public class ChooseCharacter : MonoBehaviour
             TMPName = nameJ2.GetComponent<TMPro.TextMeshProUGUI>();
             TMPName.text = "Auri";
             TMPRol = rolJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPRol.text = "Artista";
+            TMPRol.text = "Artist";
             TMPWeapon = weaponJ2.GetComponent<TMPro.TextMeshProUGUI>();
-            TMPWeapon.text = "Arma: Lapiz Wacom";
+            TMPWeapon.text = "Weapon: Wacom Pen";
 
             photoJ2.GetComponent<Image>().sprite = p1;
         }
