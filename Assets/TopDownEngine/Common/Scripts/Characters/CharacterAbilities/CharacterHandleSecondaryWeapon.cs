@@ -98,15 +98,18 @@ namespace MoreMountains.TopDownEngine
 						GameManager.current.ConsumeWrath(0,true,(int)getForce);
 					}
 					
+					if(getForce>1)
+                    {
 					ShootStart();
-						Invoke("RestoreD", 1);
+                    }
+					Invoke("RestoreD", 1);
 
 					if (GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon != null)
                     {
 						Invoke("RestoreWeapom", 2);	
 
                     }
-						getForce = 0;
+					getForce = 0;
 					pjAnim.SetBool("SupAtk2", false);
 					Activator(true);
 				}

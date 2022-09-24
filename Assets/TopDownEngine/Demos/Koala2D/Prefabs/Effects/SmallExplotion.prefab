@@ -9910,7 +9910,7 @@ GameObject:
   - component: {fileID: 4563387241032689049}
   - component: {fileID: 4562840802468225981}
   m_Layer: 0
-  m_Name: LootExplosion
+  m_Name: SmallExplotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
