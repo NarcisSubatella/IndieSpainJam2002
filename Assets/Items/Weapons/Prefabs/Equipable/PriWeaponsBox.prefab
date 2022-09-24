@@ -983,7 +983,7 @@ MonoBehaviour:
   ActiveDuration: 0.2
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 8397056
+    m_Bits: 25174272
   MinDamageCaused: 1
   MaxDamageCaused: 1
   Knockback: 1

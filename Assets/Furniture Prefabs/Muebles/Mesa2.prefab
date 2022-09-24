@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1327889483}
   - component: {fileID: 1327889482}
   - component: {fileID: 5703227011624212626}
+  - component: {fileID: 6936746933705472084}
   m_Layer: 8
   m_Name: Mesa2
   m_TagString: Untagged
@@ -104,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 786f76401708ffd43b5f60442050bd8e, type: 2}
+  contactPlace: 0
 --- !u!114 &1327889477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +271,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8714286, y: 3.6571429}
   m_EdgeRadius: 0
+--- !u!254 &6936746933705472084
+RelativeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4680577333056760978}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: 100
+  m_BreakTorque: 100
+  m_MaxForce: 10000
+  m_MaxTorque: 10000
+  m_CorrectionScale: 0.3
+  m_AutoConfigureOffset: 1
+  m_LinearOffset: {x: -0.01999998, y: 0.2941413}
+  m_AngularOffset: -0
 --- !u!1001 &1292082212444519717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,10 +362,55 @@ PrefabInstance:
       propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_sprite
       objectReference: {fileID: 0}
+    - target: {fileID: 3492426772713354303, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151226120871664467, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151350145091479113, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152015998707866165, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5920293713748260318, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5920959970001045922, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921082764264289464, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076617129004980720, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8470146337002549928, guid: 7a88beadf02339a4892361f7f9205f9c,
         type: 3}
       propertyPath: m_Name
       value: FeedBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195490943030043494, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a88beadf02339a4892361f7f9205f9c, type: 3}

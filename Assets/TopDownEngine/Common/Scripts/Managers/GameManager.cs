@@ -199,8 +199,8 @@ namespace MoreMountains.TopDownEngine
 
 		//Wrath
 		public float maxWrath = 100;
-		private float decreaseSpeed = 0.1f;
 		[SerializeField] private bool startDestroing = false;
+		[SerializeField]private float decreaseSpeed = 0.1f;
 		public CosumeWrath[] cosumeWrath;
 
 		public static GameManager current;
