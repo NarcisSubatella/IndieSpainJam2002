@@ -234,6 +234,7 @@ namespace MoreMountains.TopDownEngine
 			{
 				ShootStart();
 				GameManager.current.ConsumeWrath(0,false,0);
+				GetComponent<CharacterHandleSecondaryWeapon>().enabled = false;
 				/*if(chargeAtk < 0.5f)
                 {
 				Debug.Log("soltando");
