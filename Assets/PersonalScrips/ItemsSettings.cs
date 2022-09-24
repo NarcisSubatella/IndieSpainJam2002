@@ -18,15 +18,37 @@ public class ItemsSettings : MonoBehaviour
         if (contactPlace)
         {
             gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
-           /* foreach (Transform child in transform)
-            {
-                child.gameObject.layer = 19;
-            }*/
 
         }
     }
-    public void GetItemLayer()
+    public void PickUpGetItemLayer()
     {
         gameObject.layer = LayerMask.NameToLayer("Item");
+        transform.SetParent(null);
+    }
+    public void BreakJoin()
+    {
+        if(contactPlace)
+        {
+
+            Invoke("BreakInvoque", 1);
+          
+        }
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        if(GetComponent<PickableWeapon>())
+        {
+        Destroy(GetComponent<PickableWeapon>());
+        }
+    }
+    private void BreakInvoque()
+    {
+        if(transform.parent !=null)
+        {
+            if(GetComponentInParent<RelativeJoint2D>())
+            {
+                GetComponentInParent<RelativeJoint2D>().enabled = false;
+            }
+            transform.SetParent(null);
+        }
     }
 }
