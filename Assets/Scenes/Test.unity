@@ -11497,13 +11497,14 @@ GameObject:
   - component: {fileID: 208224712}
   - component: {fileID: 208224714}
   - component: {fileID: 208224713}
+  - component: {fileID: 208224715}
   m_Layer: 10
   m_Name: AttackFeedBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &208224712
 Transform:
   m_ObjectHideFlags: 0
@@ -11537,13 +11538,13 @@ MonoBehaviour:
   Timing:
     TimescaleMode: 0
     ExcludeFromHoldingPauses: 0
-    ContributeToTotalDuration: 1
-    InitialDelay: 0.5
+    ContributeToTotalDuration: 0
+    InitialDelay: 1
     CooldownDuration: 0
     InterruptsOnStop: 1
     NumberOfRepeats: 0
     RepeatForever: 0
-    DelayBetweenRepeats: 1
+    DelayBetweenRepeats: 0
     MMFeedbacksDirectionCondition: 0
     PlayDirection: 0
     ConstantIntensity: 0
@@ -11572,7 +11573,19 @@ MonoBehaviour:
         m_CallState: 2
   StopEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5859793190951109763}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   InitializationEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -11593,6 +11606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Feedbacks:
   - {fileID: 208224713}
+  - {fileID: 208224715}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -11629,6 +11643,66 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+--- !u!114 &208224715
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208224711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a102c1a91e34644aa37f1e4f00c31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Events
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    ExcludeFromHoldingPauses: 0
+    ContributeToTotalDuration: 1
+    InitialDelay: 0
+    CooldownDuration: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  PlayEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5859793190951109763}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  StopEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  InitializationEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  ResetEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &208980908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38574,6 +38648,10 @@ PrefabInstance:
     - target: {fileID: 1498750440386690, guid: a200a0b4274de1d4da0e68119fadcbbb, type: 3}
       propertyPath: m_Name
       value: Koala
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498750440386690, guid: a200a0b4274de1d4da0e68119fadcbbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4001341059962208, guid: a200a0b4274de1d4da0e68119fadcbbb, type: 3}
       propertyPath: m_RootOrder
@@ -100721,13 +100799,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6734098985846911832, guid: b8d884ac126d7a145857e4708fc3002e,
         type: 3}
+      propertyPath: InitialWeapon
+      value: 
+      objectReference: {fileID: 7651225604507479538, guid: 7b0ac7028a33a60449b29c48f5eba355,
+        type: 3}
+    - target: {fileID: 6734098985846911832, guid: b8d884ac126d7a145857e4708fc3002e,
+        type: 3}
+      propertyPath: CanPickupWeapons
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6734098985846911832, guid: b8d884ac126d7a145857e4708fc3002e,
+        type: 3}
       propertyPath: AbilityStopFeedbacks
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6734098985846911832, guid: b8d884ac126d7a145857e4708fc3002e,
         type: 3}
       propertyPath: BlockingMovementStates.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6734098985846911832, guid: b8d884ac126d7a145857e4708fc3002e,
         type: 3}
@@ -100753,7 +100842,7 @@ PrefabInstance:
         type: 3}
       propertyPath: AbilityStopFeedbacks
       value: 
-      objectReference: {fileID: 208224714}
+      objectReference: {fileID: 0}
     - target: {fileID: 6776148564389784578, guid: b8d884ac126d7a145857e4708fc3002e,
         type: 3}
       propertyPath: AbilityStartFeedbacks

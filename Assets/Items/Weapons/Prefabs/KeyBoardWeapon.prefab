@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 5397099765268962954}
   - component: {fileID: 5397099765268962958}
   - component: {fileID: 5397099765268962959}
-  - component: {fileID: 1658885941}
   - component: {fileID: 1632566483001218718}
   m_Layer: 23
   m_Name: KeyBoardWeapon
@@ -245,32 +244,6 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
---- !u!114 &1658885941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5397099765268962953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19a02fbe9f0e8c0438f53aad6b1562e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickedMMFeedbacks: {fileID: 0}
-  DisableColliderOnPick: 1
-  DisableObjectOnPick: 1
-  DisableDelay: 0
-  DisableModelOnPick: 0
-  DisableTargetObjectOnPick: 0
-  TargetObjectToDisable: {fileID: 0}
-  TargetObjectDisableDelay: 1
-  Model: {fileID: 0}
-  _pickable: 0
-  redyThrow: 0
-  WeaponToGive: {fileID: 7651225604507479538, guid: 7b0ac7028a33a60449b29c48f5eba355,
-    type: 3}
-  HandleWeaponID: 2
 --- !u!114 &1632566483001218718
 MonoBehaviour:
   m_ObjectHideFlags: 0

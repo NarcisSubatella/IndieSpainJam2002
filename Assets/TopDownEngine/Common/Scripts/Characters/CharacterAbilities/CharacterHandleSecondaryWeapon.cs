@@ -43,6 +43,7 @@ namespace MoreMountains.TopDownEngine
 			}
 			if ((_inputManager.SecondaryShootButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed) || (_inputManager.SecondaryShootAxis == MMInput.ButtonStates.ButtonPressed))
 			{
+				//if(GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.GetComponentInChildren<Animator>().is)
 				if(CurrentWeapon != null)
 				{
 					if(getForce<maxMultiplicator)
@@ -50,9 +51,9 @@ namespace MoreMountains.TopDownEngine
 						getForce += Time.deltaTime;
 						if(GetComponentInParent<Character>().CharacterAnimator.GetBool("SupAtk2")== false)
                         {
-							if(GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject!=null)
+							if(GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon!=null)
                             {
-							GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject.SetActive(false);
+								GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject.SetActive(false);
                             }
 							pjAnim = GetComponentInParent<Character>().CharacterAnimator;
 							Activator(false);
@@ -100,7 +101,7 @@ namespace MoreMountains.TopDownEngine
 					ShootStart();
 						Invoke("RestoreD", 1);
 
-					if (GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon.gameObject != null)
+					if (GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon != null)
                     {
 						Invoke("RestoreWeapom", 2);	
 
