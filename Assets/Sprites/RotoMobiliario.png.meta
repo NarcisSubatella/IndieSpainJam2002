@@ -102,18 +102,304 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RotoMobiliario_0
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 593
+        width: 135
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fc13bcb8da98c4282c09d86c8c64d9
+      internalID: -2032150888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_1
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1029
+        width: 394
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcd258d67a3d0941a4f0b77698982e8
+      internalID: -527894688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_2
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1235
+        width: 393
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570b433d1aa3d5f41909a5b5506b2898
+      internalID: 1376695432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 742
+        width: 304
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae19571f85bb1d64e95ee4d447274069
+      internalID: -1086975864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 960
+        width: 298
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf2bedaa94e168478ad3318d4ed37b3
+      internalID: -513675424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_5
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 712
+        width: 204
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb88e97cc5c6f148ac7fee48981b88d
+      internalID: 1326676876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_6
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 1106
+        width: 273
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47417246ee18d6c46b6832527fca3c05
+      internalID: 1754149715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_7
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1104
+        width: 219
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d044f23e487e0fd459d5748ffcc6db0c
+      internalID: 631600099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1483
+        width: 138
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694e93397af6e3f4b927ab827e7db84c
+      internalID: 1580561665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_9
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1741
+        width: 144
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eff0a0474b9f5841849a3d474b712f9
+      internalID: -651163474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_10
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 1746
+        width: 82
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c61bafb7911bb140b4499e908219753
+      internalID: -1350491206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_11
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1747
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d83990dc40ed114296760659a47ad0b
+      internalID: 724877034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_12
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 442
+        width: 380
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a38f8c88c83f14b8c2d91132a7b163
+      internalID: 1790578259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 95e37321b2612d5489d6c28d0c6fdbb1
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RotoMobiliario_3: -1086975864
+      RotoMobiliario_7: 631600099
+      RotoMobiliario_5: 1326676876
+      RotoMobiliario_0: -2032150888
+      RotoMobiliario_9: -651163474
+      RotoMobiliario_8: 1580561665
+      RotoMobiliario_10: -1350491206
+      RotoMobiliario_1: -527894688
+      RotoMobiliario_12: 1790578259
+      RotoMobiliario_4: -513675424
+      RotoMobiliario_6: 1754149715
+      RotoMobiliario_11: 724877034
+      RotoMobiliario_2: 1376695432
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
