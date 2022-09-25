@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: Keyboard
   id: 2
   weaponType: 1
-  throwForce: 300
-  pointToDestroy: 20
+  throwForce: 550
+  pointToDestroy: 270

@@ -3,11 +3,13 @@ using MoreMountains.TopDownEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ItemsSettings : MonoBehaviour
 {
     public ItemsSO item;
     public bool contactPlace;
+    public TextMeshProUGUI price;
 
     public void GetPoints()
     {
@@ -20,6 +22,16 @@ public class ItemsSettings : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
 
         }
+     
+    }
+    private void Start()
+    {
+        
+      //  price = transform.Find("PointShowTxt").GetComponent< TextMeshProUGUI>();
+
+      //  price.gameObject.SetActive(true);
+       // price.text = item.pointToDestroy.ToString();
+      //  price.gameObject.SetActive(false);
     }
     public void PickUpGetItemLayer()
     {
@@ -28,6 +40,7 @@ public class ItemsSettings : MonoBehaviour
     }
     public void BreakJoin()
     {
+        GetPrice();
         if(contactPlace)
         {
 
@@ -50,5 +63,10 @@ public class ItemsSettings : MonoBehaviour
             }
             transform.SetParent(null);
         }
+    }
+    private void GetPrice()
+    {
+        price.text = item.pointToDestroy.ToString();
+        price.gameObject.GetComponentInParent<Animator>().SetTrigger("AnimOn");
     }
 }

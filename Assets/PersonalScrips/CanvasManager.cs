@@ -9,17 +9,18 @@ public class CanvasManager : MonoBehaviour
 {
     [SerializeField] private Slider wrahtSlider;
     [SerializeField] private TextMeshProUGUI wrathTxt;
+    [SerializeField] private Health playeHealth;
     private int wrathInt;
     private void Start()
     {
-        wrahtSlider.maxValue = GameManager.current.maxWrath; 
-        wrahtSlider.value = GameManager.current.maxWrath; 
+        wrahtSlider.maxValue = playeHealth.InitialHealth; 
+        wrahtSlider.value = playeHealth.InitialHealth; 
     }
     private void LateUpdate()
     {
-        wrathInt = (int)GameManager.current.maxWrath;
+        wrathInt = (int)playeHealth.CurrentHealth;
 
-        wrahtSlider.value = GameManager.current.maxWrath;
+       wrahtSlider.value = playeHealth.CurrentHealth;
         wrathTxt.text = wrathInt.ToString()+"%";
     }
 }

@@ -30,6 +30,9 @@ public class ThrowItem : MonoBehaviour
 
         gameObject.SetActive(true);
 
+        GetComponent<DamageOnTouch>().enabled = true;
+        Invoke("DeactiveDamageTouch", 1.5f);
+
         transform.SetParent(GetComponentInParent<Player>().sidePos);
         transform.localPosition = Vector2.zero;
         rigidBody.AddForce(GetComponentInParent<Player>().directionThrow * weapon.throwForce, ForceMode2D.Impulse);
@@ -47,6 +50,10 @@ public class ThrowItem : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         GetComponent<Collider2D>().enabled = true;
         Physics2D.IgnoreLayerCollision(10, 23, false);
+    }
+    private void DeactiveDamageTouch()
+    {
+        GetComponent<DamageOnTouch>().enabled = false;
     }
     
 }

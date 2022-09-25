@@ -92,16 +92,14 @@ namespace MoreMountains.TopDownEngine
 					minD = CurrentWeapon.GetComponent<MeleeWeapon>().MinDamageCaused;
 				    maxD = CurrentWeapon.GetComponent<MeleeWeapon>().MaxDamageCaused;
 
-					if(minD < getForce && maxD < getForce)
+					/*if(minD < getForce && maxD < getForce)
                     {
+					}*/
 						CurrentWeapon.GetComponent<MeleeWeapon>().ChangeDamageValue((int)getForce);
 						GameManager.current.ConsumeWrath(0,true,(int)getForce);
-					}
-					
-					if(getForce>1)
-                    {
+			
 					ShootStart();
-                    }
+                    
 					Invoke("RestoreD", 1);
 
 					if (GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon != null)

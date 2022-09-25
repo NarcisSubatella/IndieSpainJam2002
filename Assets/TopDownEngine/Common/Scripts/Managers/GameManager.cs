@@ -199,6 +199,7 @@ namespace MoreMountains.TopDownEngine
 
 		//Wrath
 		public float maxWrath = 100;
+		[SerializeField] private Health playerHeals;
 		[SerializeField] private bool startDestroing = false;
 		[SerializeField]private float decreaseSpeed = 0.1f;
 		public CosumeWrath[] cosumeWrath;
@@ -236,7 +237,8 @@ namespace MoreMountains.TopDownEngine
 		{
 			if (startDestroing)
 			{
-				maxWrath -= decreaseSpeed * Time.deltaTime;
+				//maxWrath -= decreaseSpeed * Time.deltaTime;
+				playerHeals.CurrentHealth -= decreaseSpeed * Time.deltaTime;
 				if (maxWrath <= 0)
 				{
 					Debug.Log("WrathOver");
@@ -252,12 +254,12 @@ namespace MoreMountains.TopDownEngine
 		public void ConsumeWrath(int consumeWhartPos,bool variableCost,int multiplicator)
         {
 			if(!variableCost)
-			{ 
-				maxWrath -= cosumeWrath[consumeWhartPos].quatity;
+			{
+				playerHeals.CurrentHealth -= cosumeWrath[consumeWhartPos].quatity;
 			}
 			else
             {
-				maxWrath -= cosumeWrath[consumeWhartPos].quatity * multiplicator;
+				playerHeals.CurrentHealth -= cosumeWrath[consumeWhartPos].quatity * multiplicator;
 			}
         }
 

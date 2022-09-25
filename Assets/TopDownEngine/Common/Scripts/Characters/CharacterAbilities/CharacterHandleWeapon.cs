@@ -232,11 +232,15 @@ namespace MoreMountains.TopDownEngine
 			}*/
 			if ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonDown) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonUp))
 			{
-				if(gameObject.GetComponent<CharacterHandleSecondaryWeapon>().enabled==true)
-				{
-					GetComponent<CharacterHandleSecondaryWeapon>().enabled = false;
+				if(CurrentWeapon!=null)
+                {
+					if(gameObject.GetComponent<CharacterHandleSecondaryWeapon>().enabled==true)
+					{
+						GetComponent<CharacterHandleSecondaryWeapon>().enabled = false;
 
-				}
+					}
+
+                }
 				Debug.Log(gameObject.name);
 				ShootStart();
 				GameManager.current.ConsumeWrath(0,false,0);

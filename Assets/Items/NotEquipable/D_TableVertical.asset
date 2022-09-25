@@ -16,4 +16,4 @@ MonoBehaviour:
   id: 3
   weaponType: 0
   throwForce: 0
-  pointToDestroy: 100
+  pointToDestroy: 1050
