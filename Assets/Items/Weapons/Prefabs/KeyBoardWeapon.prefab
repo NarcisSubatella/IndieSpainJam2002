@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: ef552099c1f4dc047bf56f62e56780fd, type: 2}
-  contactPlace: 1
+  contactPlace: 0
   price: {fileID: 1387516836481142680}
 --- !u!1 &5507569368157265795
 GameObject:
