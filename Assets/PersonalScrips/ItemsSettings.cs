@@ -17,27 +17,25 @@ public class ItemsSettings : MonoBehaviour
     }
     private void Awake()
     {
-        if (!contactPlace)
+        if(gameObject.layer != LayerMask.NameToLayer("Obstacles"))
         {
-          //  gameObject.layer = LayerMask.NameToLayer("Item");
-            SetGameLayerRecursive(this.gameObject, 23);
+            if (!contactPlace)
+            {
+              //  gameObject.layer = LayerMask.NameToLayer("Item");
+                SetGameLayerRecursive(this.gameObject, 23);
 
-        }
-        else
-        {
-           // gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
-            SetGameLayerRecursive(this.gameObject, 24);
+            }
+            else
+            {
+               // gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
+                SetGameLayerRecursive(this.gameObject, 24);
+            }
         }
      
     }
     private void Start()
     {
         
-      //  price = transform.Find("PointShowTxt").GetComponent< TextMeshProUGUI>();
-
-      //  price.gameObject.SetActive(true);
-       // price.text = item.pointToDestroy.ToString();
-      //  price.gameObject.SetActive(false);
     }
     public void PickUpGetItemLayer()
     {
