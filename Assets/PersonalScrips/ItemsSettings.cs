@@ -17,10 +17,16 @@ public class ItemsSettings : MonoBehaviour
     }
     private void Awake()
     {
-        if (contactPlace)
+        if (!contactPlace)
         {
-            gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
+          //  gameObject.layer = LayerMask.NameToLayer("Item");
+            SetGameLayerRecursive(this.gameObject, 23);
 
+        }
+        else
+        {
+           // gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
+            SetGameLayerRecursive(this.gameObject, 24);
         }
      
     }
@@ -35,7 +41,7 @@ public class ItemsSettings : MonoBehaviour
     }
     public void PickUpGetItemLayer()
     {
-        gameObject.layer = LayerMask.NameToLayer("Item");
+        SetGameLayerRecursive(this.gameObject, 23);
         transform.SetParent(null);
     }
     public void BreakJoin()
@@ -68,5 +74,19 @@ public class ItemsSettings : MonoBehaviour
     {
         price.text = item.pointToDestroy.ToString();
         price.gameObject.GetComponentInParent<Animator>().SetTrigger("AnimOn");
+    }
+
+    private void SetGameLayerRecursive(GameObject _go, int _layer)
+    {
+        _go.layer = _layer;
+        foreach (Transform child in _go.transform)
+        {
+            child.gameObject.layer = _layer;
+
+            Transform _HasChildren = child.GetComponentInChildren<Transform>();
+            if (_HasChildren != null)
+                SetGameLayerRecursive(child.gameObject, _layer);
+
+        }
     }
 }
