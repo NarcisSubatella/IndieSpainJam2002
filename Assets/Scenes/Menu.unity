@@ -818,7 +818,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -8255,6 +8255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1387722647}
+  - component: {fileID: 1387722648}
   m_Layer: 5
   m_Name: SettingsComponents
   m_TagString: Untagged
@@ -8286,6 +8287,21 @@ RectTransform:
   m_AnchoredPosition: {x: 131.34813, y: -1.5787848}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1387722648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387722646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3a813baee9ee3448a55c88b6d6ce93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mSlider: {fileID: 183101284}
+  sSlider: {fileID: 1877417518}
+  mixer: {fileID: 24100000, guid: 7e984f512e89b60468e829489e8883e3, type: 2}
 --- !u!1 &1403073847
 GameObject:
   m_ObjectHideFlags: 0
