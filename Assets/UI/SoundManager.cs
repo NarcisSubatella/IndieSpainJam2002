@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider mSlider, sSlider;
+    [SerializeField] AudioMixer mixer;
     /*
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    //EN ESTOS METODOS HACER EL CAMBIO DE SONIDO
     public void ChangeMusicVol()
     {
         AudioListener.volume = mSlider.value;
