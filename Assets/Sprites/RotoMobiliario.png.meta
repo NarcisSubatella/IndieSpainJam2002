@@ -532,7 +532,7 @@ TextureImporter:
         width: 165
         height: 161
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -540,6 +540,27 @@ TextureImporter:
       bones: []
       spriteID: 0ce778a86e605884485b8583b4a51839
       internalID: 42970153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RotoMobiliario_21
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1898
+        width: 136
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486037c998e28694f84835b24ca58ef1
+      internalID: 1418242778
       vertices: []
       indices: 
       edges: []
@@ -557,12 +578,13 @@ TextureImporter:
     nameFileIdTable:
       RotoMobiliario_3: -1086975864
       RotoMobiliario_7: 631600099
-      RotoMobiliario_14: -1417420780
-      RotoMobiliario_5: 1326676876
-      RotoMobiliario_17: 266954315
       RotoMobiliario_20: 42970153
+      RotoMobiliario_5: 1326676876
+      RotoMobiliario_14: -1417420780
+      RotoMobiliario_17: 266954315
       RotoMobiliario_16: 319595519
       RotoMobiliario_19: -1991020658
+      RotoMobiliario_21: 1418242778
       RotoMobiliario_0: -2032150888
       RotoMobiliario_9: -651163474
       RotoMobiliario_8: 1580561665

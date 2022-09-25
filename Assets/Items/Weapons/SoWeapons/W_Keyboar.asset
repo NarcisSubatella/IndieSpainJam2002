@@ -17,3 +17,4 @@ MonoBehaviour:
   weaponType: 1
   throwForce: 550
   pointToDestroy: 270
+  sprites: []

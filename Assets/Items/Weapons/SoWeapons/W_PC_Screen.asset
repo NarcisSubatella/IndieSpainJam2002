@@ -15,5 +15,12 @@ MonoBehaviour:
   itemName: PC Screen
   id: 3
   weaponType: 1
-  throwForce: 500
+  throwForce: 350
   pointToDestroy: 500
+  sprites:
+  - namePoss: Horizontal
+    noBreak: {fileID: 433246763, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: 952066732, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  - namePoss: Vertical
+    noBreak: {fileID: 360733207, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: 1718063551, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}

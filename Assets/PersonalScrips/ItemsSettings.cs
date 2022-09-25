@@ -11,6 +11,14 @@ public class ItemsSettings : MonoBehaviour
     public bool contactPlace;
     public TextMeshProUGUI price;
 
+    [SerializeField] Weapon weaponToWear;
+    [SerializeField] int spritepos;
+    
+    [Header("EffectsHolder")]
+    [SerializeField] private MMFeedbacks destroy;
+    [SerializeField] private MMFeedbacks damage;
+    [SerializeField] private MMFeedbacks pickUP;
+
     public void GetPoints()
     {
         GameManager.current.gameObject.GetComponent<PointsSystem>().CountDestroyObject(item);
@@ -59,7 +67,15 @@ public class ItemsSettings : MonoBehaviour
     }
     private void BreakInvoque()
     {
-        if(transform.parent !=null)
+        //que pasa al destriur
+
+        //Que no se pueda recoger
+        GetComponent<PickableWeapon>().enabled = false;
+        gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
+        pickUP.gameObject.layer = LayerMask.NameToLayer("Obstacles");
+        transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = item.sprites[spritepos].Break;
+
+        if (transform.parent !=null)
         {
             if(GetComponentInParent<RelativeJoint2D>())
             {
@@ -86,5 +102,15 @@ public class ItemsSettings : MonoBehaviour
                 SetGameLayerRecursive(child.gameObject, _layer);
 
         }
+    }
+
+    private void Inicialite()
+    {
+        GetComponent<PickableWeapon>().PickedMMFeedbacks = pickUP;
+        GetComponent<PickableWeapon>().WeaponToGive = weaponToWear;
+
+
+        destroy.Feedbacks[0].GetComponent<MMFeedbackMaterial>().TargetRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+
     }
 }

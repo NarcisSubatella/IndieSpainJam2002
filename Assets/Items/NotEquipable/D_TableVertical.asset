@@ -17,3 +17,13 @@ MonoBehaviour:
   weaponType: 0
   throwForce: 0
   pointToDestroy: 1050
+  sprites:
+  - namePoss: Horizontal
+    noBreak: {fileID: -33196621, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: -2001461634, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  - namePoss: Horizontal Cajon D
+    noBreak: {fileID: -658161042, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: -1808241835, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  - namePoss: Vertical
+    noBreak: {fileID: -1012737307, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: -1942302342, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}

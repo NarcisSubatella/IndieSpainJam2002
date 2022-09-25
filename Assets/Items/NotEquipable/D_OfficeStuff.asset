@@ -17,3 +17,10 @@ MonoBehaviour:
   weaponType: 0
   throwForce: 0
   pointToDestroy: 430
+  sprites:
+  - namePoss: Estanteria Horizontal
+    noBreak: {fileID: -628321809, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 1418242778, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  - namePoss: Estanteria Vetical
+    noBreak: {fileID: -1993754858, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: -1350491206, guid: 92ff0678071caf449aeae50c57280528, type: 3}

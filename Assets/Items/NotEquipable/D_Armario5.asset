@@ -17,3 +17,7 @@ MonoBehaviour:
   weaponType: 0
   throwForce: 0
   pointToDestroy: 2100
+  sprites:
+  - namePoss: 
+    noBreak: {fileID: 0}
+    Break: {fileID: 0}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,4 +11,12 @@ public class ItemsSO : ScriptableObject
     public weaponsType weaponType;
     public float throwForce;
     public int pointToDestroy;
+    public SpriteGruops[] sprites;
+}
+[Serializable]
+public class SpriteGruops
+{
+    public string namePoss;
+    public Sprite noBreak;
+    public Sprite Break;
 }

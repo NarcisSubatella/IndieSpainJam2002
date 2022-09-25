@@ -224,6 +224,11 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 786f76401708ffd43b5f60442050bd8e, type: 2}
   contactPlace: 0
   price: {fileID: 2656324098976205742}
+  weaponToWear: {fileID: 0}
+  spritepos: 0
+  destroy: {fileID: 0}
+  damage: {fileID: 0}
+  pickUP: {fileID: 0}
 --- !u!50 &1776370682
 Rigidbody2D:
   serializedVersion: 4
