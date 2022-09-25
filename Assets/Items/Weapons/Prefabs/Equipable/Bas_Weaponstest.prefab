@@ -1398,7 +1398,7 @@ MonoBehaviour:
   MinDamageCaused: 4
   MaxDamageCaused: 4
   Knockback: 1
-  KnockbackForce: {x: 500, y: 0, z: 0}
+  KnockbackForce: {x: 1000, y: 0, z: 0}
   InvincibilityDuration: 0.2
   CanDamageOwner: 1
   _damageOnTouch: {fileID: 0}
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   MinDamageCaused: 5
   MaxDamageCaused: 5
   Knockback: 1
-  KnockbackForce: {x: 500, y: 0, z: 0}
+  KnockbackForce: {x: 1000, y: 0, z: 0}
   InvincibilityDuration: 0.2
   CanDamageOwner: 1
   _damageOnTouch: {fileID: 0}
@@ -1572,7 +1572,7 @@ MonoBehaviour:
   MinDamageCaused: 6
   MaxDamageCaused: 6
   Knockback: 1
-  KnockbackForce: {x: 500, y: 0, z: 0}
+  KnockbackForce: {x: 1000, y: 0, z: 0}
   InvincibilityDuration: 0.5
   CanDamageOwner: 0
   _damageOnTouch: {fileID: 0}
@@ -1659,7 +1659,7 @@ MonoBehaviour:
   MinDamageCaused: 7
   MaxDamageCaused: 7
   Knockback: 1
-  KnockbackForce: {x: 500, y: 0, z: 0}
+  KnockbackForce: {x: 1000, y: 0, z: 0}
   InvincibilityDuration: 0.5
   CanDamageOwner: 0
   _damageOnTouch: {fileID: 0}

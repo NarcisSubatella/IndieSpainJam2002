@@ -21,6 +21,7 @@ namespace MoreMountains.TopDownEngine
 		/// Gets input and triggers methods based on what's been pressed
 		/// </summary>
 		public float getForce = 0;
+		public float speedMultiplicator = 1;
 		public int maxMultiplicator=3;
 		private Animator pjAnim;
 
@@ -48,7 +49,7 @@ namespace MoreMountains.TopDownEngine
 				{
 					if(getForce<maxMultiplicator)
                     {
-						getForce += Time.deltaTime;
+						getForce += Time.deltaTime*speedMultiplicator;
 						if(GetComponentInParent<Character>().CharacterAnimator.GetBool("SupAtk2")== false)
                         {
 							if(GetComponentInParent<CharacterHandleWeapon>().CurrentWeapon!=null)
