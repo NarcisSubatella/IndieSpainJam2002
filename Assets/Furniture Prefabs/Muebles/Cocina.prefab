@@ -127,7 +127,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -270,6 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: c0b9e1a301be7f94cbaa7bff1e6f243e, type: 2}
   contactPlace: 0
+  price: {fileID: 0}
 --- !u!1001 &67924598022605833
 PrefabInstance:
   m_ObjectHideFlags: 0

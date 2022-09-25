@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3960831905726176530}
   - component: {fileID: 8550353744218222630}
-  m_Layer: 8
+  m_Layer: 24
   m_Name: Taza2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

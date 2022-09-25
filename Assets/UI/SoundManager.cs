@@ -9,7 +9,7 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider mSlider, sSlider;
     [SerializeField] AudioMixer mixer;
-    /*
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,15 +35,16 @@ public class SoundManager : MonoBehaviour
     }
 
     //EN ESTOS METODOS HACER EL CAMBIO DE SONIDO
-    public void ChangeMusicVol()
+    public void ChangeMusicVol(float volume)
     {
-        AudioListener.volume = mSlider.value;
+        mixer.SetFloat("MusicVolume", volume);
+        
         SaveMusicVol();
     }
 
-    public void ChangeMusicVol()
+    public void ChangeSoundsVol(float volume2)
     {
-        AudioListener.volume = mSlider.value;
+        mixer.SetFloat("SfxVolume", volume2);
         SaveSoundsVol();
     }
 
@@ -65,5 +66,5 @@ public class SoundManager : MonoBehaviour
     private void SaveSoundsVol()
     {
         PlayerPrefs.SetFloat("soundsVolume", sSlider.value);
-    }*/
+    }
 }
