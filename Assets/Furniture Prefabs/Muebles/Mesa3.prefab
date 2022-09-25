@@ -132,8 +132,8 @@ MonoBehaviour:
   Model: {fileID: 0}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 5
-  MaximumHealth: 5
+  InitialHealth: 50
+  MaximumHealth: 50
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 5123201514183647825}
@@ -222,6 +222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 786f76401708ffd43b5f60442050bd8e, type: 2}
+  contactPlace: 0
+  price: {fileID: 2656324098976205742}
 --- !u!50 &1776370682
 Rigidbody2D:
   serializedVersion: 4
@@ -338,9 +340,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
         type: 3}
+      propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
       propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6271138006625598436}
+    - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4459318579121905255}
+    - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
         type: 3}
       propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -348,10 +370,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
         type: 3}
+      propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: BreakJoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ItemsSettings, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
       propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: -1808241835, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6,
         type: 3}
+    - target: {fileID: 3492426772713354273, guid: 7a88beadf02339a4892361f7f9205f9c,
+        type: 3}
+      propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8470146337002549928, guid: 7a88beadf02339a4892361f7f9205f9c,
         type: 3}
       propertyPath: m_Name
@@ -359,6 +396,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a88beadf02339a4892361f7f9205f9c, type: 3}
+--- !u!114 &2656324098976205742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6031441087804030021, guid: 7a88beadf02339a4892361f7f9205f9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8606047965331093483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5123201514183647825 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3492426771110860218, guid: 7a88beadf02339a4892361f7f9205f9c,

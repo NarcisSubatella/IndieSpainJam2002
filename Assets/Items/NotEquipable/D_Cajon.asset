@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14daf23b3674e7b4eb3b0871d371850e, type: 3}
-  m_Name: D_Cajon1
+  m_Name: D_Cajon
   m_EditorClassIdentifier: 
-  itemName: Cajon
+  itemName: Shelf
   id: 0
   weaponType: 0
   throwForce: 0
-  pointToDestroy: 0
+  pointToDestroy: 850
