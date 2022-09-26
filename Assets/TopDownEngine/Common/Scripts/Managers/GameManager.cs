@@ -204,6 +204,7 @@ namespace MoreMountains.TopDownEngine
 		public bool startDestroing = false;
 		[SerializeField]private float decreaseSpeed = 0.1f;
 		public CosumeWrath[] cosumeWrath;
+		public bool timeToCount = false;
 
 		public Characters[] charactersInfo;
 
@@ -227,9 +228,15 @@ namespace MoreMountains.TopDownEngine
             {
 				Time.timeScale = 0;
 			}
-			charactersInfo[PlayerPrefs.GetInt("PJ1") - 1].PjPrefab.SetActive(true);
-			video.clip = charactersInfo[PlayerPrefs.GetInt("PJ1") - 1].video;
+			else
+            {
+				startDestroing = true;
+            }
+
+			charactersInfo[PlayerPrefs.GetInt("PJ1")].PjPrefab.SetActive(true);
+			video.clip = charactersInfo[PlayerPrefs.GetInt("PJ1")].video;
 			playerHeals = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+			Debug.Log(PlayerPrefs.GetInt("PJ1"));
 		}
 		public void StartDestroing()
         {
@@ -249,26 +256,26 @@ namespace MoreMountains.TopDownEngine
 
 
 		}
-        private void LateUpdate()
-        {
-			WrahtCountDown();
+      //  private void Uldate()
+      //  {
+		//	WrahtCountDown();
 			
-		}
+		//}
         //propios
-        public void WrahtCountDown()
+       /* public void WrahtCountDown()
 		{
 			if (startDestroing)
 			{
-				//maxWrath -= decreaseSpeed * Time.deltaTime;
+				maxWrath -= decreaseSpeed * Time.deltaTime;
 				playerHeals.CurrentHealth -= decreaseSpeed * Time.deltaTime;
-				Debug.Log(playerHeals.CurrentHealth);
+				
 				if (playerHeals.CurrentHealth <= 0)
 				{
-				
-					//startDestroing = false;
+					timeToCount = true;
+					startDestroing = false;
 				}
 			}
-		}
+		}*/
 		//propio
 		public void WrathConsume(int quantity)
 		{

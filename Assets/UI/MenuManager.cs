@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject mMenuComponents, mMenuPanel, settingsComponents, creditsComponents, surePanel, selectorPanel, sPlayersComponents, s1PlayerCompo, s2PlayerCompo;
+    public GameObject mMenuComponents, mMenuPanel, settingsComponents, creditsComponents, surePanel, selectorPanel, sPlayersComponents, s1PlayerCompo, s2PlayerCompo, tutoPanel;
     public AudioClip hoverButton, clickButton;
     public AudioSource audioSource;
     // Start is called before the first frame update
@@ -36,6 +36,10 @@ public class MenuManager : MonoBehaviour
 
         LeanTween.moveLocalX(_slotsPanel, 550, 0.8f).setEaseInOutCubic().setOnComplete(ClosePanels);
         */
+        if(tutoPanel!=null)
+        {
+            tutoPanel.SetActive(true);
+        }
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
@@ -149,5 +153,10 @@ public class MenuManager : MonoBehaviour
     {
         SoundClickButton();
         SceneManager.LoadScene(0);
+    }
+    public void CloseTuto()
+    {
+        SoundClickButton();
+        tutoPanel.SetActive(false);
     }
 }

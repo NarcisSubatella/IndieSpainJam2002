@@ -17,7 +17,10 @@ public class ChooseCharacter : MonoBehaviour
         /*p1 = Resources.Load("portrait1", typeof(Sprite)) as Sprite;
         p2 = Resources.Load("portrait2", typeof(Sprite)) as Sprite;
         p3 = Resources.Load("portrait3", typeof(Sprite)) as Sprite;
-    */}
+        
+    */
+
+    }
 
     public void RightArrowSolo()
     {
@@ -252,21 +255,24 @@ public class ChooseCharacter : MonoBehaviour
         //COMPROBAR CUAL ES EL PORTAIT QUE HAY CUANDO LE DA AL PLAY Y PASARLE AL PLAYERPREF EL NUMERO CORRESPONDIENTE PARA QUE EN LA SIGUIENTE ESCENA LO CARGUE Y JUEGE
         if (photoSoloPlayer.GetComponent<Image>().sprite.name == "portrait1")
         {
-            PlayerPrefs.SetInt("PJ1", 1);
+            Debug.Log("0");
+            PlayerPrefs.SetInt("PJ1", 0);
         }
         else if (photoSoloPlayer.GetComponent<Image>().sprite.name == "portrait2")
         {
-            PlayerPrefs.SetInt("PJ1", 2);
+            PlayerPrefs.SetInt("PJ1", 1);
+            Debug.Log(PlayerPrefs.GetInt("PJ1"));
         }
         else if (photoSoloPlayer.GetComponent<Image>().sprite.name == "portrait3")
         {
-            PlayerPrefs.SetInt("PJ1", 3);
+            Debug.Log("2");
+            PlayerPrefs.SetInt("PJ1", 2);
         }
 
         SceneManager.LoadScene(1);
     }
 
-    public void PlayMulti()
+   /* public void PlayMulti()
     {
         //COMPROBAR CUAL ES EL PORTAIT QUE HAY CUANDO LE DA AL PLAY Y PASARLE AL PLAYERPREF EL NUMERO CORRESPONDIENTE PARA QUE EN LA SIGUIENTE ESCENA LO CARGUE Y JUEGE
         if (photoJ1.GetComponent<Image>().sprite.name == "portrait1")
@@ -285,21 +291,21 @@ public class ChooseCharacter : MonoBehaviour
         //PJ2
         if (photoJ2.GetComponent<Image>().sprite.name == "portrait1")
         {
-            PlayerPrefs.SetInt("PJ2", 1);
+            PlayerPrefs.SetInt("PJ2", 0);
         }
         else if (photoJ2.GetComponent<Image>().sprite.name == "portrait2")
         {
-            PlayerPrefs.SetInt("PJ2", 2);
+            PlayerPrefs.SetInt("PJ2", 1);
         }
         else if (photoJ2.GetComponent<Image>().sprite.name == "portrait3")
         {
-            PlayerPrefs.SetInt("PJ2", 3);
+            PlayerPrefs.SetInt("PJ2", 2);
         }
 
 
 
         //SceneManager.LoadScene("PruebaDatos");
-    }
+    }*/
 
 
 }

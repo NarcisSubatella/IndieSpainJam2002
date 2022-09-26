@@ -16,7 +16,7 @@ public class MenuButtonsFeedback : MonoBehaviour, IPointerEnterHandler, IPointer
         menu = GameObject.FindGameObjectWithTag("MenuController").GetComponent<MenuManager>();
         textmeshPro = transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
         textmeshPro.color = new Color32(255, 162, 0, 255);
-        PlayerPrefs.SetInt("PJ1", 0);
+        //PlayerPrefs.SetInt("PJ1", 0);
     }
 
     // Update is called once per frame

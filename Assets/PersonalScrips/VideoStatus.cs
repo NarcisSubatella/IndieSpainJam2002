@@ -35,7 +35,7 @@ public class VideoStatus : MonoBehaviour
 
 	void CheckOver(UnityEngine.Video.VideoPlayer vp)
 	{
-				Invoke("DeleteAll", 3);
+				Invoke("DeleteAll", 4);
 	}
 
 
@@ -64,9 +64,9 @@ public class VideoStatus : MonoBehaviour
     private void DeleteAll()
     {
 		GameManager.current.StartDestroing();
-
 		Destroy(videoHolder);
 		Destroy(this.gameObject);
+		GameObject.FindGameObjectWithTag("MenuController").GetComponent<MenuManager>().tutoPanel.SetActive(true);
 	}
 	private IEnumerator ChangeAudi()
     {
