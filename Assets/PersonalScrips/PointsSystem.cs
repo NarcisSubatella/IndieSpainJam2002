@@ -26,7 +26,7 @@ namespace MoreMountains.TopDownEngine
 
         private void Start()
         {
-            playerHeals = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+            //playerHeals = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
         }
         public void CountDestroyObject(ItemsSO item)
         {
@@ -56,23 +56,24 @@ namespace MoreMountains.TopDownEngine
        
 
     
-        public void WrahtCountDown()
+        /*public void WrahtCountDown()
         {
-            if (GameManager.current. startDestroing)
+            if (GameManager.current.startDestroing)
             {
+                Debug.Log(playerHeals.CurrentHealth);
                 //maxWrath -= decreaseSpeed * Time.deltaTime;
                 playerHeals.CurrentHealth -= decreaseSpeed * Time.deltaTime;
-                if (GameManager.current.maxWrath <= 0)
+                if (playerHeals.CurrentHealth <= 0)
                 {
                     
                     GameManager.current.startDestroing = false;
                     timeToCount = true;
                 }
             }
-        }
+        }*/
         private void LateUpdate()
         {
-            WrahtCountDown();
+          //  WrahtCountDown();
             if (timeToCount)
             {
                 timeToCount = false;
@@ -80,10 +81,6 @@ namespace MoreMountains.TopDownEngine
                 Time.timeScale = 0;
                 Counting();
             }
-
-
-            GameManager.current.WrahtCountDown();
-
 
         }
         private void Counting()

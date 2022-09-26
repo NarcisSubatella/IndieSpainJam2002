@@ -35,7 +35,7 @@ public class VideoStatus : MonoBehaviour
 
 	void CheckOver(UnityEngine.Video.VideoPlayer vp)
 	{
-				Invoke("DeleteAll", 5);
+				Invoke("DeleteAll", 3);
 	}
 
 

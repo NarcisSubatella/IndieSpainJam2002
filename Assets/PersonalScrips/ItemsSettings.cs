@@ -55,7 +55,8 @@ public class ItemsSettings : MonoBehaviour
     public void BreakJoin()
     {
         GetPrice();
-       // GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        // GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        GetPoints();
         if(contactPlace)
         {
 

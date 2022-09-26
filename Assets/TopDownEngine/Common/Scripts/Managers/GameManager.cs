@@ -261,18 +261,19 @@ namespace MoreMountains.TopDownEngine
 			{
 				//maxWrath -= decreaseSpeed * Time.deltaTime;
 				playerHeals.CurrentHealth -= decreaseSpeed * Time.deltaTime;
-				if (maxWrath <= 0)
+				Debug.Log(playerHeals.CurrentHealth);
+				if (playerHeals.CurrentHealth <= 0)
 				{
-					
-					startDestroing = false;
+				
+					//startDestroing = false;
 				}
 			}
 		}
 		//propio
-		/*public void WrathConsume(int quantity)
+		public void WrathConsume(int quantity)
 		{
 			maxWrath -= quantity;
-		}*/
+		}
 		public void ConsumeWrath(int consumeWhartPos,bool variableCost,int multiplicator)
         {
 			if(!variableCost)

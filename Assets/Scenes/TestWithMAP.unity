@@ -71641,7 +71641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 256, y: -28.000244}
+  m_AnchoredPosition: {x: 256, y: -28.000122}
   m_SizeDelta: {x: -522, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224646050047210586
@@ -73117,6 +73117,16 @@ PrefabInstance:
       propertyPath: AdditionalAbilityNodes.Array.data[0]
       value: 
       objectReference: {fileID: 1364898301815884}
+    - target: {fileID: 6776469924679444610, guid: b8d884ac126d7a145857e4708fc3002e,
+        type: 3}
+      propertyPath: InitialHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6776469924679444610, guid: b8d884ac126d7a145857e4708fc3002e,
+        type: 3}
+      propertyPath: MaximumHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6886411140418869764, guid: b8d884ac126d7a145857e4708fc3002e,
         type: 3}
       propertyPath: m_RootOrder
