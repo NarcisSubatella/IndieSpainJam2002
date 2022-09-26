@@ -263,7 +263,7 @@ public class ChooseCharacter : MonoBehaviour
             PlayerPrefs.SetInt("PJ1", 3);
         }
 
-        //SceneManager.LoadScene("PruebaDatos");
+        SceneManager.LoadScene(1);
     }
 
     public void PlayMulti()

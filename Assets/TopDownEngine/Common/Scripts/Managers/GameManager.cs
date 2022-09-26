@@ -198,20 +198,23 @@ namespace MoreMountains.TopDownEngine
 		protected int _initialMaximumLives;
 		protected int _initialCurrentLives;
 
-		//Wrath
+		[Header("Wrath settings")]
 		public float maxWrath = 100;
 		[SerializeField] private Health playerHeals;
 		[SerializeField] private bool startDestroing = false;
 		[SerializeField]private float decreaseSpeed = 0.1f;
 		public CosumeWrath[] cosumeWrath;
 
+		public Characters[] charactersInfo;
+
+
+		[Header("Intro video Settings")]
 		public VideoPlayer video;
+		public bool skipIntroVideo = false;
+
+
 
 		public static GameManager current;
-
-
-
-
 
 
 		/// <summary>
@@ -222,9 +225,12 @@ namespace MoreMountains.TopDownEngine
 			base.Awake ();
 			PointsOfEntry = new List<PointsOfEntryStorage> ();
 			current = this;
-		
-
-			Time.timeScale = 0;
+			if(!skipIntroVideo)
+            {
+				Time.timeScale = 0;
+			}
+			charactersInfo[PlayerPrefs.GetInt("PJ1") - 1].PjPrefab.SetActive(true);
+			video.clip = charactersInfo[PlayerPrefs.GetInt("PJ1") - 1].video;
 		}
 		public void StartDestroing()
         {
@@ -240,8 +246,9 @@ namespace MoreMountains.TopDownEngine
 			Application.targetFrameRate = TargetFrameRate;
 			_initialCurrentLives = CurrentLives;
 			_initialMaximumLives = MaximumLives;
-
 			
+
+
 		}
         private void LateUpdate()
         {
@@ -604,4 +611,13 @@ namespace MoreMountains.TopDownEngine
 			this.MMEventStopListening<TopDownEnginePointEvent> ();
 		}
 	}
+}
+[Serializable]
+public class Characters
+{
+	public string characterName;
+	public Sprite characterImg;
+	public GameObject PjPrefab;
+	public VideoClip video;
+
 }
