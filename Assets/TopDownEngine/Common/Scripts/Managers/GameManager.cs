@@ -201,7 +201,7 @@ namespace MoreMountains.TopDownEngine
 		[Header("Wrath settings")]
 		public float maxWrath = 100;
 		[SerializeField] private Health playerHeals;
-		[SerializeField] private bool startDestroing = false;
+		public bool startDestroing = false;
 		[SerializeField]private float decreaseSpeed = 0.1f;
 		public CosumeWrath[] cosumeWrath;
 
@@ -211,8 +211,6 @@ namespace MoreMountains.TopDownEngine
 		[Header("Intro video Settings")]
 		public VideoPlayer video;
 		public bool skipIntroVideo = false;
-
-
 
 		public static GameManager current;
 
@@ -231,6 +229,7 @@ namespace MoreMountains.TopDownEngine
 			}
 			charactersInfo[PlayerPrefs.GetInt("PJ1") - 1].PjPrefab.SetActive(true);
 			video.clip = charactersInfo[PlayerPrefs.GetInt("PJ1") - 1].video;
+			playerHeals = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
 		}
 		public void StartDestroing()
         {
@@ -256,7 +255,7 @@ namespace MoreMountains.TopDownEngine
 			
 		}
         //propios
-        private void WrahtCountDown()
+        public void WrahtCountDown()
 		{
 			if (startDestroing)
 			{
@@ -264,7 +263,7 @@ namespace MoreMountains.TopDownEngine
 				playerHeals.CurrentHealth -= decreaseSpeed * Time.deltaTime;
 				if (maxWrath <= 0)
 				{
-					Debug.Log("WrathOver");
+					
 					startDestroing = false;
 				}
 			}

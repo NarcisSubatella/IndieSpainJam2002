@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using MoreMountains.TopDownEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -11,6 +12,12 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI wrathTxt;
     [SerializeField] private Health playeHealth;
     [SerializeField] private Image characterSpriteHolder;
+
+    public GameObject mMenuComponents, mMenuPanel, settingsComponents, creditsComponents, surePanel, selectorPanel, sPlayersComponents;
+    public AudioClip hoverButton, clickButton;
+    public AudioSource audioSource;
+
+
     private int wrathInt;
     private void Start()
     {
@@ -25,4 +32,6 @@ public class CanvasManager : MonoBehaviour
        wrahtSlider.value = playeHealth.CurrentHealth;
         wrathTxt.text = wrathInt.ToString()+"%";
     }
+
+
 }

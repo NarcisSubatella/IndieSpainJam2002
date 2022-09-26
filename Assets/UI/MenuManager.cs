@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -142,5 +143,11 @@ public class MenuManager : MonoBehaviour
     {
         audioSource.clip = clickButton;
         audioSource.Play();
+    }
+
+    public void BackToMenu()
+    {
+        SoundClickButton();
+        SceneManager.LoadScene(0);
     }
 }
