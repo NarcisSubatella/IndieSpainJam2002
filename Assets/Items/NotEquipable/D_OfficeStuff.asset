@@ -15,12 +15,23 @@ MonoBehaviour:
   itemName: Office Stuff
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 430
   sprites:
   - namePoss: Estanteria Horizontal
+    life: 50
     noBreak: {fileID: -628321809, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
     Break: {fileID: 1418242778, guid: 92ff0678071caf449aeae50c57280528, type: 3}
-  - namePoss: Estanteria Vetical
+  - namePoss: Cajonera Vetical Cerrada
+    life: 50
     noBreak: {fileID: -1993754858, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
     Break: {fileID: -1350491206, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  - namePoss: Cajonera Horizontal
+    life: 50
+    noBreak: {fileID: 523582638, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: -651163474, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  - namePoss: Cajonera Vertical abierta
+    life: 0
+    noBreak: {fileID: 1147280861, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 724877034, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

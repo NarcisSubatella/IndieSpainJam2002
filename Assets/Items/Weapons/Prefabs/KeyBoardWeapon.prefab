@@ -36,8 +36,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2195336417912977044}
   - {fileID: 1852065119}
+  - {fileID: 2195336417912977044}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -258,8 +258,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 87d61325f65063840b966cea8074a2e0, type: 2}
-  contactPlace: 1
   price: {fileID: 1387516836481142680}
+  contactPlace: 0
+  picKableObject: 1
+  weaponToWear: {fileID: 7651225604507479538, guid: d4182a70839d0ed438c04d42c3250af3,
+    type: 3}
+  spritepos: 0
 --- !u!1 &5507569368157265795
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +294,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3853957864819217524}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6723324007581777669
 SpriteRenderer:
@@ -730,7 +734,7 @@ PrefabInstance:
     - target: {fileID: 5132507583429073969, guid: 4e3548aec27821640bdb860980a5e54e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5132507583429073969, guid: 4e3548aec27821640bdb860980a5e54e,
         type: 3}

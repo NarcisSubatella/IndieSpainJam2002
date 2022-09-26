@@ -15,5 +15,11 @@ MonoBehaviour:
   itemName: Wood table
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 370
+  sprites:
+  - namePoss: Frente
+    life: 25
+    noBreak: {fileID: 714377963, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: -513675424, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

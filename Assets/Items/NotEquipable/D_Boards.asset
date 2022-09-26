@@ -15,5 +15,15 @@ MonoBehaviour:
   itemName: Board
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 210
+  sprites:
+  - namePoss: Frente
+    life: 20
+    noBreak: {fileID: 1260381983, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 266954315, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  - namePoss: Frente Controles
+    life: 20
+    noBreak: {fileID: 1800947936, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 568643949, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

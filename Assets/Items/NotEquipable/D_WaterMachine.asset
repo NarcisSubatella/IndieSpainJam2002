@@ -15,5 +15,11 @@ MonoBehaviour:
   itemName: Water Machine
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 470
+  sprites:
+  - namePoss: Frente
+    life: 50
+    noBreak: {fileID: 2142939554, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: 1326676876, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

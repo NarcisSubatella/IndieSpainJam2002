@@ -15,5 +15,15 @@ MonoBehaviour:
   itemName: Cooking Furniture
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 540
+  sprites:
+  - namePoss: Encimera Frente
+    life: 70
+    noBreak: {fileID: 21300000, guid: a879ffed7494ba244ba4cfa558a33c78, type: 3}
+    Break: {fileID: 8511911, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+  - namePoss: Cafetera frente
+    life: 25
+    noBreak: {fileID: -644635566, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 42970153, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

@@ -15,9 +15,11 @@ MonoBehaviour:
   itemName: Wardrove
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 2100
   sprites:
-  - namePoss: 
-    noBreak: {fileID: 0}
-    Break: {fileID: 0}
+  - namePoss: Vertical
+    life: 100
+    noBreak: {fileID: 1345046643, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: -2032150888, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

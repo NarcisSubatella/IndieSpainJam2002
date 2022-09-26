@@ -15,5 +15,19 @@ MonoBehaviour:
   itemName: Sofa
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 2500
+  sprites:
+  - namePoss: Vertical
+    life: 70
+    noBreak: {fileID: 100338283, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 1580561665, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  - namePoss: Horizontal
+    life: 70
+    noBreak: {fileID: 406175920, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 1376695432, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  - namePoss: Horizontal Reves
+    life: 70
+    noBreak: {fileID: -60981657, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: -527894688, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

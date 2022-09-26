@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using MoreMountains.InventoryEngine;
 using MoreMountains.Feedbacks;
 using System;
+using UnityEngine.Video;
 
 namespace MoreMountains.TopDownEngine
 {
@@ -204,7 +205,12 @@ namespace MoreMountains.TopDownEngine
 		[SerializeField]private float decreaseSpeed = 0.1f;
 		public CosumeWrath[] cosumeWrath;
 
+		public VideoPlayer video;
+
 		public static GameManager current;
+
+
+
 
 
 
@@ -216,7 +222,14 @@ namespace MoreMountains.TopDownEngine
 			base.Awake ();
 			PointsOfEntry = new List<PointsOfEntryStorage> ();
 			current = this;
+		
+
+			Time.timeScale = 0;
+		}
+		public void StartDestroing()
+        {
 			startDestroing = true;
+			Time.timeScale = 1;
 		}
 
 		/// <summary>
@@ -227,10 +240,13 @@ namespace MoreMountains.TopDownEngine
 			Application.targetFrameRate = TargetFrameRate;
 			_initialCurrentLives = CurrentLives;
 			_initialMaximumLives = MaximumLives;
+
+			
 		}
         private void LateUpdate()
         {
 			WrahtCountDown();
+			
 		}
         //propios
         private void WrahtCountDown()

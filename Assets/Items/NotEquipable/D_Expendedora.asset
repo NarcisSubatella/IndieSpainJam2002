@@ -15,5 +15,15 @@ MonoBehaviour:
   itemName: Vending Machine
   id: 0
   weaponType: 0
-  throwForce: 0
   pointToDestroy: 4200
+  sprites:
+  - namePoss: Grande Horizontal
+    life: 200
+    noBreak: {fileID: 540260742, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 1754149715, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  - namePoss: "Peque\xF1a Horizontal"
+    life: 200
+    noBreak: {fileID: -41662456, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: 631600099, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 0
+  throwDamage: 0

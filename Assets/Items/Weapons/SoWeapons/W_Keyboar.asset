@@ -15,6 +15,11 @@ MonoBehaviour:
   itemName: Keyboard
   id: 2
   weaponType: 1
-  throwForce: 550
   pointToDestroy: 270
-  sprites: []
+  sprites:
+  - namePoss: Front
+    life: 10
+    noBreak: {fileID: 1131021222, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+    Break: {fileID: 758529530, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  throwForce: 550
+  throwDamage: 10

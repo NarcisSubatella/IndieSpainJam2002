@@ -15,12 +15,19 @@ MonoBehaviour:
   itemName: PC Screen
   id: 3
   weaponType: 1
-  throwForce: 350
   pointToDestroy: 500
   sprites:
-  - namePoss: Horizontal
+  - namePoss: Front
+    life: 10
     noBreak: {fileID: 433246763, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
     Break: {fileID: 952066732, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
-  - namePoss: Vertical
+  - namePoss: Side
+    life: 10
     noBreak: {fileID: 360733207, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
     Break: {fileID: 1718063551, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  - namePoss: Back
+    life: 10
+    noBreak: {fileID: -1471263812, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: -983380180, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 350
+  throwDamage: 6

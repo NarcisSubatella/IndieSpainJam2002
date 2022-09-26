@@ -8,16 +8,18 @@ using TMPro;
 public class ItemsSettings : MonoBehaviour
 {
     public ItemsSO item;
-    public bool contactPlace;
     public TextMeshProUGUI price;
+
+    public bool contactPlace;
+    [SerializeField] private bool pickableObject = false; 
 
     [SerializeField] Weapon weaponToWear;
     [SerializeField] int spritepos;
     
-    [Header("EffectsHolder")]
-    [SerializeField] private MMFeedbacks destroy;
-    [SerializeField] private MMFeedbacks damage;
-    [SerializeField] private MMFeedbacks pickUP;
+    //Holders de los effectos
+    private GameObject destroy;
+    private GameObject damage;
+    private GameObject pickUP;
 
     public void GetPoints()
     {
@@ -40,10 +42,10 @@ public class ItemsSettings : MonoBehaviour
             }
         }
      
+        Inicialite();
     }
     private void Start()
     {
-        
     }
     public void PickUpGetItemLayer()
     {
@@ -53,13 +55,13 @@ public class ItemsSettings : MonoBehaviour
     public void BreakJoin()
     {
         GetPrice();
+       // GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         if(contactPlace)
         {
 
             Invoke("BreakInvoque", 1);
           
         }
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         if(GetComponent<PickableWeapon>())
         {
         Destroy(GetComponent<PickableWeapon>());
@@ -70,10 +72,15 @@ public class ItemsSettings : MonoBehaviour
         //que pasa al destriur
 
         //Que no se pueda recoger
-        GetComponent<PickableWeapon>().enabled = false;
+      /*  if (GetComponent<PickableWeapon>())
+        {
+            GetComponent<PickableWeapon>().enabled = false;
+        }*/
+        //cambiar layers
         gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
         pickUP.gameObject.layer = LayerMask.NameToLayer("Obstacles");
-        transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = item.sprites[spritepos].Break;
+
+        transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite = item.sprites[spritepos].Break;
 
         if (transform.parent !=null)
         {
@@ -106,11 +113,33 @@ public class ItemsSettings : MonoBehaviour
 
     private void Inicialite()
     {
-        GetComponent<PickableWeapon>().PickedMMFeedbacks = pickUP;
-        GetComponent<PickableWeapon>().WeaponToGive = weaponToWear;
+        price = transform.GetChild(0).GetChild(1).GetComponentInChildren<TextMeshProUGUI>();
 
+        //Asignar holders de los feedbacks
+        destroy = transform.GetChild(0).GetChild(0).Find("DestroyFeedBack").gameObject;
+        damage = transform.GetChild(0).GetChild(0).Find("DamageFeedBack").gameObject;
 
-        destroy.Feedbacks[0].GetComponent<MMFeedbackMaterial>().TargetRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        //solo objetos equipables
+        if (pickableObject)
+        {
+            pickUP = transform.GetChild(0).GetChild(0).Find("FeedBackPickUp").gameObject;
+            //Asignar arma
+            GetComponent<PickableWeapon>().WeaponToGive = weaponToWear;
+            GetComponent<PickableWeapon>().PickedMMFeedbacks = pickUP.GetComponent<MMFeedbacks>();
+
+            //Assignar la localizacion del render para cambiar el material outline posteriormente
+            destroy.GetComponent<MMFeedbacks>().Feedbacks[0].GetComponent<MMFeedbackMaterial>().TargetRenderer = transform.GetChild(1).GetComponent<SpriteRenderer>();
+
+            GetComponent<ThrowItem>().weapon = item;
+        }
+
+        //healts scrips
+        Health health = GetComponent<Health>();
+        health.InitialHealth = item.sprites[spritepos].life;
+        health.CurrentHealth = item.sprites[spritepos].life;
+        health.DamageMMFeedbacks = damage.GetComponent<MMFeedbacks>();
+        health.DeathMMFeedbacks = destroy.GetComponent<MMFeedbacks>();
+
 
     }
 }
