@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14daf23b3674e7b4eb3b0871d371850e, type: 3}
+  m_Name: W_Chair
+  m_EditorClassIdentifier: 
+  itemName: PC Screen
+  id: 3
+  weaponType: 1
+  pointToDestroy: 750
+  sprites:
+  - namePoss: Front
+    life: 25
+    noBreak: {fileID: 21300000, guid: 03572f1357d86864ea15db765504910f, type: 3}
+    Break: {fileID: -1767709600, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  - namePoss: Side
+    life: 25
+    noBreak: {fileID: 21300000, guid: 2abbb135d42b31242960862c8178b946, type: 3}
+    Break: {fileID: -1989447339, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  - namePoss: Back
+    life: 25
+    noBreak: {fileID: 21300000, guid: a1e6e54105d1f9c43b1531a22cf3c124, type: 3}
+    Break: {fileID: 1951915584, guid: c2e2cb0cb3448b24f8e59087c9a1fbc6, type: 3}
+  throwForce: 350
+  throwDamage: 15

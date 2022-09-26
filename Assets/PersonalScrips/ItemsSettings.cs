@@ -54,13 +54,26 @@ public class ItemsSettings : MonoBehaviour
     }
     public void BreakJoin()
     {
+        if (GetComponent<SpriteRenderer>())
+        {
+        GetComponent<SpriteRenderer>().sprite = item.sprites[spritepos].Break;
+
+        }
+        else
+        {
+
+        transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite = item.sprites[spritepos].Break;
+        }
         GetPrice();
         // GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetPoints();
-        if(contactPlace)
+        gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
+        pickUP.gameObject.layer = LayerMask.NameToLayer("Obstacles");
+
+        if (contactPlace)
         {
 
-            Invoke("BreakInvoque", 1);
+          Invoke("BreakInvoque", 1);
           
         }
         if(GetComponent<PickableWeapon>())
@@ -78,10 +91,7 @@ public class ItemsSettings : MonoBehaviour
             GetComponent<PickableWeapon>().enabled = false;
         }*/
         //cambiar layers
-        gameObject.layer = LayerMask.NameToLayer("ItemNoDetect");
-        pickUP.gameObject.layer = LayerMask.NameToLayer("Obstacles");
 
-        transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().sprite = item.sprites[spritepos].Break;
 
         if (transform.parent !=null)
         {

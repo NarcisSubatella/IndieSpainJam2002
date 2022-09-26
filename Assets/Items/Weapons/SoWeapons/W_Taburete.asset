@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14daf23b3674e7b4eb3b0871d371850e, type: 3}
+  m_Name: W_Taburete
+  m_EditorClassIdentifier: 
+  itemName: Stool
+  id: 3
+  weaponType: 1
+  pointToDestroy: 700
+  sprites:
+  - namePoss: Front
+    life: 20
+    noBreak: {fileID: 1831871716, guid: 4f01cb94af070744ca4db79f8647a0b2, type: 3}
+    Break: {fileID: -1091501841, guid: 92ff0678071caf449aeae50c57280528, type: 3}
+  throwForce: 350
+  throwDamage: 12
